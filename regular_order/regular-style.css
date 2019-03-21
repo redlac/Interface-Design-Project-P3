@@ -1,0 +1,45 @@
+.regular-item{
+    display: flex;
+    margin-bottom: 0.5vw;
+}
+
+#regular-order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECA400;
+}
+
+#regular-view{
+    width: 5vw;
+    margin-bottom: 2vw;
+}
+
+#regular-item-image{ 
+    width: 3vw;
+    height: 3vw;
+    border: 1px solid black;
+    margin-right: 0.5vw;
+}
+
+#regular-item-desc{
+    width: 15vw;
+    border: 1px solid black;
+    margin-right: 0.5vw;
+}
+
+#regular-item-qty{
+    width: 3vw;
+    margin-right: 0.5vw;
+}
+
+#regular-itemList{
+    height: 12vw;
+    overflow-y: scroll;
+}
+
+#regular-placeOrder{
+    margin-top: 0.5vw;
+    width: 10vw;
+}
