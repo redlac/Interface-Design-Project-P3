@@ -1,7 +1,15 @@
-.regular-item{
-    display: flex;
-    margin-bottom: 0.5vw;
+/* Remove arrows from number inputs*/
+input[type=number] {
+    -moz-appearance:textfield;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
 
 #regular-order{
     display: flex;
@@ -16,20 +24,27 @@
     margin-bottom: 2vw;
 }
 
-#regular-item-image{ 
+#regular-placeOrder{
+    margin-top: 0.5vw;
+    width: 10vw;
+}
+
+/* Styles for item list view */
+
+#regular-itemList #regular-item-image{ 
     width: 3vw;
     height: 3vw;
     border: 1px solid black;
     margin-right: 0.5vw;
 }
 
-#regular-item-desc{
+#regular-itemList #regular-item-desc{
     width: 15vw;
     border: 1px solid black;
     margin-right: 0.5vw;
 }
 
-#regular-item-qty{
+#regular-itemList #regular-item-qty{
     width: 3vw;
     margin-right: 0.5vw;
 }
@@ -39,7 +54,58 @@
     overflow-y: scroll;
 }
 
-#regular-placeOrder{
-    margin-top: 0.5vw;
-    width: 10vw;
+#regular-itemList > div{
+    display: flex;
+    margin-bottom: 0.5vw;
+}
+
+
+/*Styles for item grid view */
+
+.regular-gridRow{
+    display: flex;
+    margin-bottom: 0.5vw;
+}
+
+.regular-gridQty > input{
+    width: 2vw;
+    height: 2vw;
+    text-align: center;
+}
+
+#regular-itemGrid{
+    height: 12vw;
+    overflow-y: scroll;
+}
+
+#regular-itemGrid .regular-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0.5vw;
+}
+
+#regular-itemGrid #regular-item-image{ 
+    width: 6.1vw;
+    height: 6.1vw;
+    border: 1px solid black;
+    margin-bottom: 0.5vw;
+}
+
+#regular-itemGrid #regular-item-desc{
+    width: 6.1vw;
+    border: 1px solid black;
+    margin-bottom: 0.5vw;
+}
+
+#regular-gridQty{
+    display: flex;
+    width: 3vw;
+    margin-bottom: 0.5vw;
+}
+
+#regular-itemGrid{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5vw;
 }
