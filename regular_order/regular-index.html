@@ -18,32 +18,68 @@
         <div class="regular-item">
             <div id="regular-item-image">image</div>
             <div id="regular-item-desc">description</div>
-            <input id="regular-item-qty" type="number" min="0" value="0">
+            <div class="regular-listQty">
+                <input id="regular-ListQty1" type="number" value="0" min="0">
+                <div>
+                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(1);"> 
+                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularListMinusQty(1);">
+                </div>
+            </div>
         </div>
         <div class="regular-item">
             <div id="regular-item-image">image</div>
             <div id="regular-item-desc">description</div>
-            <input id="regular-item-qty" type="number" min="0" value="0">
+            <div class="regular-listQty">
+                <input id="regular-ListQty2" type="number" value="0" min="0">
+                <div>
+                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(2);"> 
+                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularListMinusQty(2);">
+                </div>
+            </div>
         </div>
         <div class="regular-item">
             <div id="regular-item-image">image</div>
             <div id="regular-item-desc">description</div>
-            <input id="regular-item-qty" type="number" min="0" value="0">
+            <div class="regular-listQty">
+                <input id="regular-ListQty3" type="number" value="0" min="0">
+                <div>
+                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(3);"> 
+                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularListMinusQty(3);">
+                </div>
+            </div>
         </div>
         <div class="regular-item">
             <div id="regular-item-image">image</div>
             <div id="regular-item-desc">description</div>
-            <input id="regular-item-qty" type="number" min="0" value="0">
+            <div class="regular-listQty">
+                <input id="regular-ListQty4" type="number" value="0" min="0">
+                <div>
+                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(4);"> 
+                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularListMinusQty(4);">
+                </div>
+            </div>
         </div>
         <div class="regular-item">
             <div id="regular-item-image">image</div>
             <div id="regular-item-desc">description</div>
-            <input id="regular-item-qty" type="number" min="0" value="0">
+            <div class="regular-listQty">
+                <input id="regular-ListQty5" type="number" value="0" min="0">
+                <div>
+                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(5);"> 
+                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularListMinusQty(5);">
+                </div>
+            </div>
         </div>
         <div class="regular-item">
             <div id="regular-item-image">image</div>
             <div id="regular-item-desc">description</div>
-            <input id="regular-item-qty" type="number" min="0" value="0">
+            <div class="regular-listQty">
+                <input id="regular-ListQty6" type="number" value="0" min="0">
+                <div>
+                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(6);"> 
+                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularListMinusQty(6);">
+                </div>
+            </div>
         </div>
     </div>
     <div id="regular-itemGrid">
@@ -52,27 +88,27 @@
                 <div id="regular-item-desc">description</div>
                 <div id="regular-item-image">image</div>
                 <div class="regular-gridQty">
-                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularMinusQty(1);">
+                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularGridMinusQty(1);">
                     <input id="regular-GridQty1" type="number" value="0" min="0">
-                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularPlusQty(1);"> 
+                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(1);"> 
                 </div>
             </div>
             <div class="regular-item">
                 <div id="regular-item-desc">description</div>
                 <div id="regular-item-image">image</div>
                 <div class="regular-gridQty">
-                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularMinusQty(2);">
+                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularGridMinusQty(2);">
                     <input id="regular-GridQty2" type="number" value="0" min="0">
-                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularPlusQty(2);"> 
+                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(2);"> 
                 </div>
             </div>
             <div class="regular-item">
                 <div id="regular-item-desc">description</div>
                 <div id="regular-item-image">image</div>
                 <div class="regular-gridQty">
-                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularMinusQty(3);">
+                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularGridMinusQty(3);">
                     <input id="regular-GridQty3" type="number" value="0" min="0">
-                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularPlusQty(3);"> 
+                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(3);"> 
                 </div>
             </div>
         </div>
@@ -81,27 +117,27 @@
                 <div id="regular-item-desc">description</div>
                 <div id="regular-item-image">image</div>
                 <div class="regular-gridQty">
-                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularMinusQty(4);">
+                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularGridMinusQty(4);">
                     <input id="regular-GridQty4" type="number" value="0" min="0">
-                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularPlusQty(4);"> 
+                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(4);"> 
                 </div>
             </div>
             <div class="regular-item">
                 <div id="regular-item-desc">description</div>
                 <div id="regular-item-image">image</div>
                 <div class="regular-gridQty">
-                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularMinusQty(5);">
+                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularGridMinusQty(5);">
                     <input id="regular-GridQty5" type="number" value="0" min="0">
-                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularPlusQty(5);"> 
+                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(5);"> 
                 </div>
             </div>
             <div class="regular-item">
                 <div id="regular-item-desc">description</div>
                 <div id="regular-item-image">image</div>
                 <div class="regular-gridQty">
-                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularMinusQty(6);">
+                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularGridMinusQty(6);">
                     <input id="regular-GridQty6" type="number" value="0" min="0">
-                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularPlusQty(6);"> 
+                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(6);"> 
                 </div>
             </div>
         </div>
