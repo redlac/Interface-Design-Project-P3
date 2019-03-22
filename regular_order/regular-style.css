@@ -1,7 +1,11 @@
 /* Remove arrows from number inputs*/
 input[type=number] {
     -moz-appearance:textfield;
+    width: 2vw;
+    height: 3.1vw;
+    text-align: center;
 }
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
@@ -9,7 +13,6 @@ input[type=number]::-webkit-outer-spin-button {
     appearance: none;
     margin: 0; 
 }
-
 
 #regular-order{
     display: flex;
@@ -31,8 +34,23 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* Styles for item list view */
 
+.regular-listQty{
+    display: flex;
+    width: 5.2vw;
+}
+
+.regular-listQty > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.regular-listQty > div > input{
+    height: 1.5vw;
+}
+
 #regular-itemList #regular-item-image{ 
-    width: 3vw;
+    width: 4vw;
     height: 3vw;
     border: 1px solid black;
     margin-right: 0.5vw;
@@ -51,6 +69,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 #regular-itemList{
     height: 12vw;
+    width: 22vw;
     overflow-y: scroll;
 }
 
@@ -74,8 +93,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #regular-itemGrid{
+    display: none;
+    flex-direction: column;
     height: 12vw;
+    width: 22vw;
     overflow-y: scroll;
+    margin-bottom: 0.5vw;
 }
 
 #regular-itemGrid .regular-item{
@@ -98,14 +121,3 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 0.5vw;
 }
 
-#regular-gridQty{
-    display: flex;
-    width: 3vw;
-    margin-bottom: 0.5vw;
-}
-
-#regular-itemGrid{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.5vw;
-}
