@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/header-styles.css">
     <link rel="stylesheet" href="CSS/tabs-style.css">
     <link rel="stylesheet" href="CSS/regular-style.css">
+    <link rel="stylesheet" href="CSS/history-style.css">
 </head>
 
 <body onload="getDate()">
@@ -224,8 +225,12 @@
             </div>
 
             <div id="tabs-History" class="tabs-tabcontent">
-                <h3>History</h3>
-                <p>History of orders</p>
+				<div id="hBG">
+					<div class="hSelections">
+						<h3>Shipped From: <input type="date"></h3>
+						<h3>Shipped To: <input type="date"></h3>
+					</div>
+				</div>
             </div>
         </div>
     </div>
