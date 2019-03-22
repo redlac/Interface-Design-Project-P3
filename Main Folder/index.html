@@ -229,9 +229,20 @@
 
             <div id="tabs-History" class="tabs-tabcontent">
 				<div id="hBG">
+					<!--This is where you can select the dates and submit them/-->
 					<div class="hSelections">
-						<h3>Shipped From: <input type="date"></h3>
-						<h3>Shipped To: <input type="date"></h3>
+						<h3>Shipped From: <input type="date" id="hDateShipped"></h3>
+						<h3>Shipped To: <input type="date" id="hDateReceived"></h3>
+						<input type="button" value="submit" id="hDateSubmit" onClick="hShowDateTables();">
+					</div>
+					<!--This is where all the tables will be added./-->
+					<div id="hDateTables">
+					</div>
+					<!--This is where the two buttons will be./-->
+					<!--For some reason they appear at the top... Whatever, fix later/-->
+					<div id="hButtonOptions">
+						<input type="button" value="Print Selected Order" id="hPrintOrder" onClick="hPrintCurrentOrder();">
+						<input type="button" value="Cancel Last Order" id="hClearSubmit" onClick="hClearUnshippedTable();">
 					</div>
 				</div>
             </div>
