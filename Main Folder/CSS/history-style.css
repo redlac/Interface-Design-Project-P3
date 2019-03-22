@@ -1,0 +1,12 @@
+#hBG
+{
+	margin: 0;
+	background-color: blue;
+	display: flex;
+}
+
+.hSelectons
+{
+	justify: center;
+}
+

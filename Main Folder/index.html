@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/header-styles.css">
     <link rel="stylesheet" href="CSS/tabs-style.css">
     <link rel="stylesheet" href="CSS/regular-style.css">
+    <link rel="stylesheet" href="CSS/history-style.css">
 </head>
 
 <body onload="getDate()">
@@ -227,8 +228,23 @@
             </div>
 
             <div id="tabs-History" class="tabs-tabcontent">
-                <h3>History</h3>
-                <p>History of orders</p>
+				<div id="hBG">
+					<!--This is where you can select the dates and submit them/-->
+					<div class="hSelections">
+						<h3>Shipped From: <input type="date" id="hDateShipped"></h3>
+						<h3>Shipped To: <input type="date" id="hDateReceived"></h3>
+						<input type="button" value="submit" id="hDateSubmit" onClick="hShowDateTables();">
+					</div>
+					<!--This is where all the tables will be added./-->
+					<div id="hDateTables">
+					</div>
+					<!--This is where the two buttons will be./-->
+					<!--For some reason they appear at the top... Whatever, fix later/-->
+					<div id="hButtonOptions">
+						<input type="button" value="Print Selected Order" id="hPrintOrder" onClick="hPrintCurrentOrder();">
+						<input type="button" value="Cancel Last Order" id="hClearSubmit" onClick="hClearUnshippedTable();">
+					</div>
+				</div>
             </div>
             
             <div id="tabs-OrderOptions" class="tabs-tabcontent">
