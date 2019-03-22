@@ -12,14 +12,14 @@
   outline: none;
   cursor: pointer;
   transition: 0.3s;
-  width: 10vw;
+  width: 12vw;
   height: 0px;
   border-bottom: 40px solid #b1b1b1;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   text-align: center;
   font-size: x-large;
-  padding-bottom: 15px;
+  padding-bottom: 19px;
 }
 
 .tabs-outerTab{
