@@ -1,0 +1,235 @@
+<!doctype html>
+
+<head>
+    <title>Awesome Soft Serve</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" href="CSS/header-styles.css">
+    <link rel="stylesheet" href="CSS/tabs-style.css">
+    <link rel="stylesheet" href="CSS/regular-style.css">
+</head>
+
+<body onload="getDate()">
+    <div id="header-header">
+        <div id="header-cutoff">
+            <span>Currentdate <span id="header-currentDate"></span></span><br>
+            <span>Cut Off time: 5:00 p.m.</span>
+        </div>
+        <div id="header-headerImage" >
+            <img class="header-headimage" src="images/shutterstock_288575585-1000x300.jpg" alt="gg">
+            <!-- https://sevenfigurepublishing.com/2018/02/23/3-must-see-charts-fast-food-faster-gains/ -->
+        </div><br><br>
+        <table id="header-table">
+            <tr>
+                <th class="header-button">
+                    <a href="home.html">HOME</a>
+                </th>
+                <th class="header-button">
+                    <a href="products.html">PRODUCTS</a>
+                </th>
+                <th class="header-button">
+                    <a href="orders.html">ORDERS</a>
+                </th>
+                <th class="header-button">
+                    <a href="options.html">OPTIONS</a>
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div id="tabs-tabContainer">
+        <div id="tabs-tabDiv">
+            <!-- Tab links -->
+            <div class="tabs-tab">
+                <div class="tabs-outerTab">
+                    <div class="tabs-tablinks" onclick="openScreen(event, 'tabs-Regular')"><br>Regular</div>
+                </div>
+                <div class="tabs-outerTab">
+                    <div class="tabs-tablinks" onclick="openScreen(event, 'tabs-Special')"><br>Special</div>
+                </div>
+                <div class="tabs-outerTab">
+                    <div class="tabs-tablinks" onclick="openScreen(event, 'tabs-History')"><br>History</div>
+                </div>
+            </div>
+
+            <!-- Tab content -->
+            <div id="tabs-Regular" class="tabs-tabcontent">
+                <div id="regular-order">
+                    <h1>Regular Order</h1>
+                    <label for="regular-view">
+                        List by:
+                        <select id="regular-view">
+                            <option selected>
+                                List View 
+                            </option>
+                            <option>
+                                Grid View 
+                            </option>
+                        </select>
+                    </label>
+                    <div id="regular-itemList">
+                        <div class="regular-item">
+                            <div id="regular-item-image">image</div>
+                            <div id="regular-item-desc">description</div>
+                            <div class="regular-listQty">
+                                <input id="regular-ListQty1" type="number" value="0" min="0">
+                                <div>
+                                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(1);"> 
+                                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularListMinusQty(1);">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="regular-item">
+                            <div id="regular-item-image">image</div>
+                            <div id="regular-item-desc">description</div>
+                            <div class="regular-listQty">
+                                <input id="regular-ListQty2" type="number" value="0" min="0">
+                                <div>
+                                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(2);"> 
+                                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularListMinusQty(2);">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="regular-item">
+                            <div id="regular-item-image">image</div>
+                            <div id="regular-item-desc">description</div>
+                            <div class="regular-listQty">
+                                <input id="regular-ListQty3" type="number" value="0" min="0">
+                                <div>
+                                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(3);"> 
+                                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularListMinusQty(3);">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="regular-item">
+                            <div id="regular-item-image">image</div>
+                            <div id="regular-item-desc">description</div>
+                            <div class="regular-listQty">
+                                <input id="regular-ListQty4" type="number" value="0" min="0">
+                                <div>
+                                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(4);"> 
+                                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularListMinusQty(4);">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="regular-item">
+                            <div id="regular-item-image">image</div>
+                            <div id="regular-item-desc">description</div>
+                            <div class="regular-listQty">
+                                <input id="regular-ListQty5" type="number" value="0" min="0">
+                                <div>
+                                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(5);"> 
+                                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularListMinusQty(5);">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="regular-item">
+                            <div id="regular-item-image">image</div>
+                            <div id="regular-item-desc">description</div>
+                            <div class="regular-listQty">
+                                <input id="regular-ListQty6" type="number" value="0" min="0">
+                                <div>
+                                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(6);"> 
+                                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularListMinusQty(6);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="regular-itemGrid">
+                        <div class="regular-gridRow">
+                            <div class="regular-item">
+                                <div id="regular-item-desc">description</div>
+                                <div id="regular-item-image">image</div>
+                                <div class="regular-gridQty">
+                                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularGridMinusQty(1);">
+                                    <input id="regular-GridQty1" type="number" value="0" min="0">
+                                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(1);"> 
+                                </div>
+                                <div id="regular-stock">
+                                    Stock: 0
+                                </div>
+                            </div>
+                            <div class="regular-item">
+                                <div id="regular-item-desc">description</div>
+                                <div id="regular-item-image">image</div>
+                                <div class="regular-gridQty">
+                                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularGridMinusQty(2);">
+                                    <input id="regular-GridQty2" type="number" value="0" min="0">
+                                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(2);"> 
+                                </div>
+                                <div id="regular-stock">
+                                    Stock: 0
+                                </div>
+                            </div>
+                            <div class="regular-item">
+                                <div id="regular-item-desc">description</div>
+                                <div id="regular-item-image">image</div>
+                                <div class="regular-gridQty">
+                                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularGridMinusQty(3);">
+                                    <input id="regular-GridQty3" type="number" value="0" min="0">
+                                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(3);"> 
+                                </div>
+                                <div id="regular-stock">
+                                    Stock: 0
+                                </div>
+                            </div>
+                        </div>
+                        <div class="regular-gridRow">
+                            <div class="regular-item">
+                                <div id="regular-item-desc">description</div>
+                                <div id="regular-item-image">image</div>
+                                <div class="regular-gridQty">
+                                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularGridMinusQty(4);">
+                                    <input id="regular-GridQty4" type="number" value="0" min="0">
+                                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(4);"> 
+                                </div>
+                                <div id="regular-stock">
+                                    Stock: 0
+                                </div>
+                            </div>
+                            <div class="regular-item">
+                                <div id="regular-item-desc">description</div>
+                                <div id="regular-item-image">image</div>
+                                <div class="regular-gridQty">
+                                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularGridMinusQty(5);">
+                                    <input id="regular-GridQty5" type="number" value="0" min="0">
+                                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(5);"> 
+                                </div>
+                                <div id="regular-stock">
+                                    Stock: 0
+                                </div>
+                            </div>
+                            <div class="regular-item">
+                                <div id="regular-item-desc">description</div>
+                                <div id="regular-item-image">image</div>
+                                <div class="regular-gridQty">
+                                    <input type="button" value="-" class="regular-QtyMinus" onclick="regularGridMinusQty(6);">
+                                    <input id="regular-GridQty6" type="number" value="0" min="0">
+                                    <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(6);"> 
+                                </div>
+                                <div id="regular-stock">
+                                    Stock: 0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <input id="regular-placeOrder" type="submit" value="Place Order">
+
+            </div>
+            </div>
+
+            <div id="tabs-Special" class="tabs-tabcontent">
+                <h3>Special</h3>
+                <p>Special order items.</p>
+            </div>
+
+            <div id="tabs-History" class="tabs-tabcontent">
+                <h3>History</h3>
+                <p>History of orders</p>
+            </div>
+        </div>
+    </div>
+    <script src="header-js.js"></script>
+    <script src="tabs-script.js"></script>
+    <script src="regular-js.js"></script>
+</body>
