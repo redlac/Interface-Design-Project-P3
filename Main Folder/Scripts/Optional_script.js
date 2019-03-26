@@ -1,30 +1,33 @@
 var flag = true;
 var check_box1, check_box2, check_box3;
 var item_num;
-const myData = [];
+let myData = [];
 
 function database_array() 
 {
+    //Reseting array to empty array
+    myData = [];
     for(var i = 0; i < regularDatabase.length; i++) 
     {
         myData.push(regularDatabase[i]);
     }
-    for(var i = 0; i < specialDatabase.length; i++) 
+    for(var i = 0; i < autoOrderDatabase.length; i++) 
     {
-        myData.push(specialDatabase[i]);
+        myData.push(autoOrderDatabase[i]);
     }
     console.log(myData);
 
 }
 
 function displayResult() {
-    if (flag) {
+    // if (flag) {
         document.getElementById("div_output").style.display = "block";
-        flag = false;
-    } else {
-        document.getElementById("div_output").style.display = "none";
-        flag = true;
-    }
+        getData();
+    //     flag = false;
+    // } else {
+    //     document.getElementById("div_output").style.display = "none";
+    //     flag = true;
+    // }
 }
 
 function enabling() {
@@ -42,19 +45,31 @@ function enabling() {
 function getData() 
 {
     item_num = document.getElementById("input_item").value;
-    const data_file = new database_array();
+    var data_file = new database_array();
     console.log(item_num);
     console.log(myData);
+    const myTable = document.querySelector("#table_output");
+    const table_length = document.getElementById("table_output").rows.length;
+    console.log(table_length);
 
     for(let obj of myData) 
     {
         if(obj.itemID == parseInt(item_num)) 
         {
+            var image = document.createElement("img");
+            image.setAttribute("src", obj.picUrl);
+            
+            var row = myTable.insertRow(table_length);
+            var item_id = row.insertCell(0);
+            item_id.innerHTML = parseInt(obj.itemID).toString();
+            var item_name = row.insertCell(1);
+            item_name.append(image);
+            var item_description = row.insertCell(2);
+            item_description.innerHTML = obj.itemName + "\n<br>" + obj.description;
+
             document.getElementById("output_result").innerHTML = parseInt(obj.itemID).toString() + " at Index: " + myData.indexOf(obj) + " and ranked at positon: " + (myData.indexOf(obj) + 1);
             console.log(parseInt(obj.itemID).toString() + " at Index: " + myData.indexOf(obj) + " and ranked at positon: " + (myData.indexOf(obj) + 1));
         }
     }
-
-
 }
 
