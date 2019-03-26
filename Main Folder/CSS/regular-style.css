@@ -68,7 +68,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 #regular-itemList .regular-item-image{ 
     width: 4vw;
-    height: 3vw;
+    height: 4vw;
     border: 1px solid black;
     margin-right: 0.5vw;
 }
@@ -86,13 +86,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 #regular-itemList{
     height: 12vw;
-    width: 22vw;
+    width: 23vw;
     overflow-y: scroll;
 }
 
 #regular-itemList > div{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 0.5vw;
 }
 
@@ -114,7 +115,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: none;
     flex-direction: column;
     height: 12vw;
-    width: 22vw;
+    width: 23vw;
     overflow-y: scroll;
     margin-bottom: 0.5vw;
 }
@@ -124,6 +125,7 @@ input[type=number]::-webkit-outer-spin-button {
     flex-direction: column;
     align-items: center;
     margin-right: 0.5vw;
+    width: 10vw;
 }
 
 #regular-itemGrid .regular-item-image{ 
