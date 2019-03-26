@@ -5,8 +5,24 @@
 	display: flex;
 }
 
-.hSelectons
+#hSelectons
 {
 	justify: center;
 }
 
+.hTableStyle
+{
+	width: 90%;
+	height: 200;
+	text-align: center;
+	margin: 0;
+    border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.hTableCellStyle
+{
+	width: 17%;
+    border: 1px solid black;
+	border-collapse: collapse;
+}
