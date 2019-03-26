@@ -6,11 +6,11 @@ body
 div
 {
     border: 1px solid red;
-    width: 500px;
+    width: 1000px;
     margin: auto;
 }
 
-form 
+form, tr, th, td 
 {
     border: 1px solid blue;
 }
@@ -22,4 +22,8 @@ form
 #div_output 
 {
     display: none;
+}
+th 
+{
+    width: 500px;
 }

@@ -1,3 +1,10 @@
+/**
+ * NOTE
+ * If picture doesn't show up,
+ * you may want to remove " ../ " out of the picUrl
+ * I did it and it worked.
+ */
+
 const regularDatabase = 
 [
 	{
@@ -6,7 +13,7 @@ const regularDatabase =
 		'description' : "Testeroni",
 		'stock' : 78,
 		'quantity' : 0,
-		'picUrl' : "../images/placeholder.png"
+		'picUrl' : "images/placeholder.png"
 	},
 	{
 		'itemID' : 1001,
@@ -14,7 +21,7 @@ const regularDatabase =
 		'description' : "Testeroni",
 		'stock' : 1573,
 		'quantity' : 0,
-		'picUrl' : "../images/placeholder.png"
+		'picUrl' : "images/placeholder.png"
 	},
 	{
 		'itemID' : 1002,
@@ -22,7 +29,7 @@ const regularDatabase =
 		'description' : "Testeroni",
 		'stock' : 15,
 		'quantity' : 0,
-		'picUrl' : "../images/placeholder.png"
+		'picUrl' : "images/placeholder.png"
 	}
 ];
 
@@ -66,6 +73,6 @@ const autoOrderDatabase =
 		'description' : "Makes you feel high, maaaaan.",
 		'stock' : 69,
 		'quantity' : 0,
-		'picUrl' : "../images/placeholder.png"
+		'picUrl' : "images/placeholder.png"
 	}
 ];
