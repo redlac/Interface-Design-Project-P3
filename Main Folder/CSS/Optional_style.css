@@ -1,0 +1,25 @@
+body 
+{
+    text-align: justify;
+}
+
+div
+{
+    border: 1px solid red;
+    width: 500px;
+    margin: auto;
+}
+
+form 
+{
+    border: 1px solid blue;
+}
+#add_item 
+{
+    text-align: center;
+}
+
+#div_output 
+{
+    display: none;
+}
