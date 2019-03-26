@@ -15,7 +15,7 @@ function openScreen(evt, screenName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(screenName).innerHTML = '<object type="text/html" data="Orders.html" width="100%" height="100%" style="overflow: hidden;"></object>';
+  document.getElementById(screenName).innerHTML = '<object type="text/html" data="regular_tab.html" width="100%" height="100%" style="overflow: hidden;"></object>';
   document.getElementById(screenName).style.display = "block";
   evt.currentTarget.className += " active";
 } 
