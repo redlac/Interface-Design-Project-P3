@@ -3,8 +3,9 @@ var check_box1, check_box2, check_box3;
 var item_num;
 let myData = [];
 
-function data_file() 
+function database_array() 
 {
+    myData = [];
     for(var i = 0; i < regularDatabase.length; i++) 
     {
         myData.push(regularDatabase[i]);
@@ -42,7 +43,7 @@ function enabling() {
 function getData() 
 {
     item_num = document.getElementById("input_item").value;
-    //var data_file = new database_array();
+    var data_file = new database_array();
     console.log(item_num);
     console.log(myData);
 
