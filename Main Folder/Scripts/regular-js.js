@@ -56,3 +56,7 @@ document.getElementById("regular-item-desc2").innerHTML = "<span>" + regularData
 document.getElementById("regular-item-desc3").innerHTML = "<span>" + regularDatabase[1].itemName + "</span>"
                                                         + "<p>Stock: " + regularDatabase[1].stock + "</p>"
                                                         + "<p>" + regularDatabase[1].description + "</p>";
+
+document.getElementById("regular-grid-item-desc1").innerHTML = "<span>" + regularDatabase[0].itemName + "</span>"; 
+document.getElementById("regular-grid-item-desc2").innerHTML = "<span>" + regularDatabase[1].itemName + "</span>"; 
+document.getElementById("regular-grid-item-desc3").innerHTML = "<span>" + regularDatabase[2].itemName + "</span>"; 
