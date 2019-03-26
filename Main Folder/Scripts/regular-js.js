@@ -1,3 +1,6 @@
+/**
+ * Functions for setting the quantity on items when the plus and minus buttons are clicked.
+ */
 function regularGridMinusQty(itemNumber) {
     itemQty = Number(document.getElementById("regular-GridQty" + itemNumber).value);
     if (itemQty > 0) {
@@ -26,6 +29,9 @@ function regularListPlusQty(itemNumber) {
     document.getElementById("regular-ListQty" + itemNumber).value = itemQty;
 }
 
+/**
+ * Function that listens for the selection change from list to grid view.
+ */
 document.getElementById("regular-view").onchange = function () {
     let viewType = document.getElementById("regular-view").value;
     if (viewType == "Grid View") {
@@ -38,3 +44,15 @@ document.getElementById("regular-view").onchange = function () {
         document.getElementById("regular-itemGrid").style.display = "none";
     }
 }
+
+document.getElementById("regular-item-desc1").innerHTML = "<span>" + regularDatabase[0].itemName + "</span>"
+                                                        + "<p>Stock: " + regularDatabase[0].stock + "</p>"
+                                                        + "<p>" + regularDatabase[0].description + "</p>";
+
+document.getElementById("regular-item-desc2").innerHTML = "<span>" + regularDatabase[1].itemName + "</span>"
+                                                        + "<p>Stock: " + regularDatabase[1].stock + "</p>"
+                                                        + "<p>" + regularDatabase[1].description + "</p>";
+
+document.getElementById("regular-item-desc3").innerHTML = "<span>" + regularDatabase[1].itemName + "</span>"
+                                                        + "<p>Stock: " + regularDatabase[1].stock + "</p>"
+                                                        + "<p>" + regularDatabase[1].description + "</p>";
