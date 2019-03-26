@@ -1,6 +1,21 @@
 var flag = true;
 var check_box1, check_box2, check_box3;
 var item_num;
+let myData = [];
+
+function data_file() 
+{
+    for(var i = 0; i < regularDatabase.length; i++) 
+    {
+        myData.push(regularDatabase[i]);
+    }
+    for(var i = 0; i < specialDatabase.length; i++) 
+    {
+        myData.push(specialDatabase[i]);
+    }
+    console.log(myData);
+
+}
 
 function displayResult() {
     if (flag) {
@@ -27,6 +42,18 @@ function enabling() {
 function getData() 
 {
     item_num = document.getElementById("input_item").value;
+    //var data_file = new database_array();
     console.log(item_num);
-    console.log(regularDatabase[1].itemID.toString());
+    console.log(myData);
+
+    for(let obj of myData) 
+    {
+        if(obj.itemID == parseInt(item_num)) 
+        {
+            document.getElementById("output_result").innerHTML = parseInt(obj.itemID).toString() + " at Index: " + myData.indexOf(obj) + " and ranked at positon: " + (myData.indexOf(obj) + 1);
+        }
+    }
+
+
 }
+
