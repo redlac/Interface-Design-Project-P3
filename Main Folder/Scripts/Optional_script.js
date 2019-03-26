@@ -1,9 +1,9 @@
 var flag = true;
 var check_box1, check_box2, check_box3;
 var item_num;
-let myData = [];
+const myData = [];
 
-function data_file() 
+function database_array() 
 {
     for(var i = 0; i < regularDatabase.length; i++) 
     {
@@ -42,7 +42,7 @@ function enabling() {
 function getData() 
 {
     item_num = document.getElementById("input_item").value;
-    //var data_file = new database_array();
+    const data_file = new database_array();
     console.log(item_num);
     console.log(myData);
 
@@ -51,6 +51,7 @@ function getData()
         if(obj.itemID == parseInt(item_num)) 
         {
             document.getElementById("output_result").innerHTML = parseInt(obj.itemID).toString() + " at Index: " + myData.indexOf(obj) + " and ranked at positon: " + (myData.indexOf(obj) + 1);
+            console.log(parseInt(obj.itemID).toString() + " at Index: " + myData.indexOf(obj) + " and ranked at positon: " + (myData.indexOf(obj) + 1));
         }
     }
 
