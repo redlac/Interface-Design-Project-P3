@@ -18,6 +18,18 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0; 
 }
 
+.regular-item-image{
+    background-image: url("../images/placeholder.png");
+}
+
+#regular-item-desc1, #regular-item-desc2, #regular-item-desc3{
+    width: 10vw;
+}
+
+#regular-item-desc1 > p, #regular-item-desc2 > p, #regular-item-desc3 > p{
+    margin: 0;
+}
+
 #regular-order{
     display: flex;
     flex-direction: column;
@@ -27,7 +39,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #regular-view{
-    width: 5vw;
+    width: 6vw;
     margin-bottom: 2vw;
 }
 
@@ -47,13 +59,14 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 3.1vw;
 }
 
 .regular-listQty > div > input{
     height: 1.5vw;
 }
 
-#regular-itemList #regular-item-image{ 
+#regular-itemList .regular-item-image{ 
     width: 4vw;
     height: 3vw;
     border: 1px solid black;
@@ -79,6 +92,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 #regular-itemList > div{
     display: flex;
+    justify-content: space-between;
     margin-bottom: 0.5vw;
 }
 
@@ -112,7 +126,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: 0.5vw;
 }
 
-#regular-itemGrid #regular-item-image{ 
+#regular-itemGrid .regular-item-image{ 
     width: 6.1vw;
     height: 6.1vw;
     border: 1px solid black;
