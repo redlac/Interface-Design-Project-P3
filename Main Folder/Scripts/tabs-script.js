@@ -29,7 +29,7 @@ function openScreen(evt, screenName) {
       break;
     case "tabs-OrderOptions":
       /* TODO: change page url */ 
-      document.getElementById(screenName).innerHTML = '<object type="text/html" data="order_options_tab.html" width="100%" height="100%" style="overflow: hidden;"></object>';
+      document.getElementById(screenName).innerHTML = '<object type="text/html" data="Optional_tab.html" width="100%" height="100%" style="overflow: hidden;"></object>';
       break;
   }
   document.getElementById(screenName).style.display = "block";
