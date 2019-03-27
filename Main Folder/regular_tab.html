@@ -99,7 +99,7 @@
                     <input id="regular-GridQty1" type="number" value="0" min="0">
                     <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(1);"> 
                 </div>
-                <div class="regular-stock">
+                <div id="regular-stock1">
                     Stock: 0
                 </div>
             </div>
@@ -111,7 +111,7 @@
                     <input id="regular-GridQty2" type="number" value="0" min="0">
                     <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(2);"> 
                 </div>
-                <div class="regular-stock">
+                <div id="regular-stock2">
                     Stock: 0
                 </div>
             </div>
@@ -123,7 +123,7 @@
                     <input id="regular-GridQty3" type="number" value="0" min="0">
                     <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(3);"> 
                 </div>
-                <div class="regular-stock">
+                <div id="regular-stock3">
                     Stock: 0
                 </div>
             </div>
@@ -137,7 +137,7 @@
                     <input id="regular-GridQty4" type="number" value="0" min="0">
                     <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(4);"> 
                 </div>
-                <div class="regular-stock">
+                <div id="regular-stock4">
                     Stock: 0
                 </div>
             </div>
@@ -149,7 +149,7 @@
                     <input id="regular-GridQty5" type="number" value="0" min="0">
                     <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(5);"> 
                 </div>
-                <div class="regular-stock">
+                <div id="regular-stock5">
                     Stock: 0
                 </div>
             </div>
@@ -161,13 +161,17 @@
                     <input id="regular-GridQty6" type="number" value="0" min="0">
                     <input type="button" value="+" class="regular-QtyPlus" onclick="regularGridPlusQty(6);"> 
                 </div>
-                <div class="regular-stock">
+                <div id="regular-stock6">
                     Stock: 0
                 </div>
             </div>
         </div>
     </div>
-    <input id="regular-placeOrder" type="submit" value="Place Order">
+    <input id="regular-placeOrder" type="submit" value="Place Order" onclick="placeOrder();">
+    <div id="confirm-popup">
+        <h2>Order successfully placed.</h2> 
+        <h2>Check email for confirmation.</h2>
+    </div>
 
 </div>
 <script src="scripts/database.js"></script>
