@@ -1,5 +1,6 @@
 <head>
 <link rel="stylesheet" href="CSS/history-style.css">
+<script src="scripts/history-script.js"></script>
 </head>
 <body>
 <div id="hBG">
@@ -7,7 +8,7 @@
 	<div id="hWiden">
 		<!--Yeah I know, goal isn't to make this be fancy, it's just to make it work./-->
 		<h3>Shipping Sent:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="date" id="hDateShipped"></h3>
-		<h3>Shipping Received:<input type="date" id="hDateReceived"></h3>
+		<h3>Shipping Received:<input type="date" id="hDateReceived" onChange="hShowPreviousOrder()"></h3>
 		<table class="hTableStyle">
 			<tr class="hTableStyle">
 				<th class="hTableCellStyle">Order#</th>
@@ -17,7 +18,7 @@
 				<th class="hTableCellStyle">Status</th>
 				<th class="hTableCellStyle">View Order</th>
 			</tr>
-			<tr class="hTableStyle">
+			<tr class="hTableStyle" id="deleteFirstOne">
 				<td class="hTableCellStyle">34547535</td>
 				<td class="hTableCellStyle">34</td>
 				<td class="hTableCellStyle">03-15-2019</td>
@@ -33,7 +34,7 @@
 				<td class="hTableCellStyle">Shipped</td>
 				<td class="hTableCellStyle"><input type="button" value="View" id="hViewOrder" onClick="hViewOrder();"></td>
 			</tr>
-			<tr class="hTableStyle">
+			<tr class="hTableStyle" id="clearLastOne">
 				<td class="hTableCellStyle">34547464</td>
 				<td class="hTableCellStyle">62</td>
 				<td class="hTableCellStyle">03-20-2019</td>
@@ -52,7 +53,7 @@
 			<input type="button" value="Print Selected Order">
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<input type="button" value="Cancel Last Order" id="hClearSubmit" onClick="hClearUnshippedTable();">
+			<input type="button" value="Cancel Current Order" id="hClearSubmit" onClick="hClearUnshippedTable();">
 		</div>
 	</div>
 	<!--This is where all the tables will be added./-->
@@ -62,6 +63,7 @@
 	</div>
 	<!--This is where the two buttons will be./-->
 	<!--For some reason they appear at the top... Whatever, fix later/-->
+	<!--Or just keep it empty, okay then.../-->
 	<div id="hButtonOptions">
 	</div>
 </div>

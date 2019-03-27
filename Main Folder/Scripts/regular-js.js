@@ -83,3 +83,15 @@ document.getElementById("regular-grid-item-desc3").innerHTML = "<h4>" + regularD
 document.getElementById("regular-grid-item-desc4").innerHTML = "<h4>" + regularDatabase[3].itemName + "</h4>"; 
 document.getElementById("regular-grid-item-desc5").innerHTML = "<h4>" + regularDatabase[4].itemName + "</h4>"; 
 document.getElementById("regular-grid-item-desc6").innerHTML = "<h4>" + regularDatabase[5].itemName + "</h4>"; 
+
+document.getElementById("regular-stock1").innerHTML = "Stock: " + regularDatabase[0].stock;
+document.getElementById("regular-stock2").innerHTML = "Stock: " + regularDatabase[1].stock;
+document.getElementById("regular-stock3").innerHTML = "Stock: " + regularDatabase[2].stock;
+document.getElementById("regular-stock4").innerHTML = "Stock: " + regularDatabase[3].stock;
+document.getElementById("regular-stock5").innerHTML = "Stock: " + regularDatabase[4].stock;
+document.getElementById("regular-stock6").innerHTML = "Stock: " + regularDatabase[5].stock;
+
+function placeOrder(){
+    document.getElementById("regular-placeOrder").style.display = "none";
+    document.getElementById("confirm-popup").style.display = "block";
+}
