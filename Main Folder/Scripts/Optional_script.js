@@ -43,14 +43,15 @@ function getData()
 
 function removing_item(id) 
 {
+    var row_num;
     for(var i = 0; i < myIDs.length; i++) 
     {
         if(id == myIDs[i]) 
         {
-            myIDs.slice(myIDs[i], 1);
+            row_num = (i+1);
         }
     }
-    displayResult(0);
+    document.getElementById("table_output").deleteRow(row_num);
 }
 
 function displayResult(length) {
