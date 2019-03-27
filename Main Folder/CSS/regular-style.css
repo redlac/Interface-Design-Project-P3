@@ -78,8 +78,13 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #regular-placeOrder{
-    margin-top: 0.5vw;
+    margin-top: 2vw;
     width: 10vw;
+}
+
+#confirm-popup{
+    width: 23vw;
+    height: 12vw;
 }
 
 /* Styles for item list view */
