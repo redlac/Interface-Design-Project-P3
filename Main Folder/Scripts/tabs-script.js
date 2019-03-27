@@ -18,18 +18,22 @@ function openScreen(evt, screenName) {
   switch (screenName){
     case "tabs-Regular":
       document.getElementById(screenName).innerHTML = '<object type="text/html" data="regular_tab.html" width="100%" height="100%" style="overflow: hidden;"></object>';
+      document.getElementById("regular-tab").className += " active";
       break;
     case "tabs-Special":
       /* TODO: change page url */ 
       document.getElementById(screenName).innerHTML = '<object type="text/html" data="special_tab.html" width="100%" height="100%" style="overflow: hidden;"></object>';
+      document.getElementById("regular-tab").className.replace(" active", "");
       break;
     case "tabs-History":
       /* TODO: change page url */ 
       document.getElementById(screenName).innerHTML = '<object type="text/html" data="history_tab.html" width="100%" height="100%" style="overflow: hidden;"></object>';
+      document.getElementById("regular-tab").className.replace(" active", "");
       break;
     case "tabs-OrderOptions":
       /* TODO: change page url */ 
       document.getElementById(screenName).innerHTML = '<object type="text/html" data="Optional_tab.html" width="100%" height="100%" style="overflow: hidden;"></object>';
+      document.getElementById("regular-tab").className.replace(" active", "");
       break;
   }
   document.getElementById(screenName).style.display = "block";
