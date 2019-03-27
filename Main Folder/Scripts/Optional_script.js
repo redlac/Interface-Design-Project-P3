@@ -1,7 +1,7 @@
 var flag = true;
 var check_box1, check_box2, check_box3;
-var item_num;
-let myData = [];
+var item_num, data_file;
+let myData = [], myIDs = [];
 
 function database_array() 
 {
@@ -19,16 +19,7 @@ function database_array()
 
 }
 
-function displayResult() {
-    // if (flag) {
-        document.getElementById("div_output").style.display = "block";
-        getData();
-    //     flag = false;
-    // } else {
-    //     document.getElementById("div_output").style.display = "none";
-    //     flag = true;
-    // }
-}
+
 
 function enabling() {
     if (document.getElementById("auto_add_item").checked == true) {
@@ -45,17 +36,45 @@ function enabling() {
 function getData() 
 {
     item_num = document.getElementById("input_item").value;
-    var data_file = new database_array();
-    console.log(item_num);
-    console.log(myData);
-    const myTable = document.querySelector("#table_output");
+    data_file = new database_array();
     const table_length = document.getElementById("table_output").rows.length;
-    console.log(table_length);
+    displayResult(table_length)
+}
 
-    for(let obj of myData) 
+function removing_item(id) 
+{
+    for(var i = 0; i < myIDs.length; i++) 
     {
-        if(obj.itemID == parseInt(item_num)) 
+        if(id == myIDs[i]) 
         {
+            myIDs.slice(myIDs[i], 1);
+        }
+    }
+    displayResult(0);
+}
+
+function displayResult(length) {
+    var flag = true;
+    const myTable = document.querySelector("#table_output");
+    const table_length = length;
+    console.log(myTable);
+    console.log(flag, table_length);
+    document.getElementById("div_output").style.display = "block";
+    for(var i = 0; i < myIDs.length; i++) 
+    {
+        if(item_num == myIDs[i]) 
+        {
+            flag = false;
+        }
+    }
+    console.log(flag);
+    for(let obj of myData) 
+    {   
+        console.log(flag);
+        if(obj.itemID == parseInt(item_num) && flag) 
+        {   
+            myIDs.push(obj.itemID);
+
             var image = document.createElement("img");
             image.setAttribute("src", obj.picUrl);
             
@@ -74,10 +93,10 @@ function getData()
 
             var update_button = document.createElement("button");
             update_button.innerHTML = "Update";
-            update_button.setAttribute("onclick", `updating_item();`);
+            update_button.setAttribute("onclick", `updating_item(${obj.itemID});`);
             var remove_button = document.createElement("button");
             remove_button.innerHTML = "Remove";
-            remove_button.setAttribute("onclick", `removing_item();`);
+            remove_button.setAttribute("onclick", `removing_item(${obj.itemID});`);
             //Rows
             var row = myTable.insertRow(table_length);
             row.setAttribute("id", "row_out_put");
@@ -108,4 +127,3 @@ function getData()
         }
     }
 }
-
