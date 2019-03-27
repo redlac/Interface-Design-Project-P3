@@ -7,3 +7,4 @@
 * orange image: https://images.pexels.com/photos/42059/citrus-diet-food-fresh-42059.jpeg
 * ham image: https://images.pexels.com/photos/161533/abstract-barbecue-barbeque-bbq-161533.jpeg
 * mushroom image: https://www.parents.com/recipe/sandwiches/mushroom-veggie-burger/
+* header image: https://sevenfigurepublishing.com/2018/02/23/3-must-see-charts-fast-food-faster-gains/
