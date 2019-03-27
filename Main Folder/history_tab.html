@@ -3,22 +3,33 @@
 </head>
 <div id="hBG">
 	<!--This is where you can select the dates and submit them/-->
-	<div id="hSelections">
-		<h3>Shipped From: <input type="date" id="hDateShipped"></h3>
-		<h3>Shipped To: <input type="date" id="hDateReceived"></h3>
+	<div id="hWiden">
+		<!--Yeah I know, goal isn't to make this be fancy, it's just to make it work./-->
+		<h3>Shipping Sent:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="date" id="hDateShipped"></h3>
+		<h3>Shipping Received:<input type="date" id="hDateReceived"></h3>
 		<table class="hTableStyle">
 			<tr class="hTableStyle">
-				<td class="hTableCellStyle"><img src="images/placeholder.png"/></td>
-				<td class="hTableCellStyle">Test</td>
-				<td class="hTableCellStyle">Test</td>
-				<td class="hTableCellStyle">Test</td>
-				<td class="hTableCellStyle">Test</td>
+				<th class="hTableCellStyle">Order#</th>
+				<th class="hTableCellStyle">Num Items</th>
+				<th class="hTableCellStyle">Date Ordered</th>
+				<th class="hTableCellStyle">Date Shipped</th>
+				<th class="hTableCellStyle">Status</th>
+				<th class="hTableCellStyle">View Order</th>
+			</tr>
+			<tr class="hTableStyle">
+				<td class="hTableCellStyle">34547535</td>
+				<td class="hTableCellStyle">34</td>
+				<td class="hTableCellStyle">01-15-2019</td>
+				<td class="hTableCellStyle">01-16-2019</td>
+				<td class="hTableCellStyle"><input type="button" value="View" id="hViewOrder" onClick="hViewOrder();">
+</td>
 			</tr>
 		</table>
-		<input type="button" value="submit" id="hDateSubmit" onClick="hShowDateTables();">
-		<input type="button" value="Print Selected Order" id="hPrintOrder" onClick="hPrintCurrentOrder();">
-		<input type="button" value="Cancel Last Order" id="hClearSubmit" onClick="hClearUnshippedTable();">
-
+		<div id="hSpaceButtons">
+			<input type="button" value="submit" id="hDateSubmit" onClick="hShowDateTables();">
+			<input type="button" value="Print Selected Order" id="hPrintOrder" onClick="hPrintCurrentOrder();">
+			<input type="button" value="Cancel Last Order" id="hClearSubmit" onClick="hClearUnshippedTable();">
+		</div>
 	</div>
 	<!--This is where all the tables will be added./-->
 	<div id="hDateTables">
