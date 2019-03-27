@@ -22,11 +22,11 @@ input[type=number]::-webkit-outer-spin-button {
     background-image: url("../images/placeholder.png");
 }
 
-#regular-item-desc1, #regular-item-desc2, #regular-item-desc3{
+#regular-item-desc1, #regular-item-desc2, #regular-item-desc3,#regular-item-desc4,#regular-item-desc5,#regular-item-desc6{
     width: 10vw;
 }
 
-#regular-item-desc1 > p, #regular-item-desc2 > p, #regular-item-desc3 > p{
+#regular-item-desc1 > p, #regular-item-desc2 > p, #regular-item-desc3 > p, #regular-item-desc4 > p, #regular-item-desc5 > p, #regular-item-desc6 > p{
     margin: 0;
 }
 
