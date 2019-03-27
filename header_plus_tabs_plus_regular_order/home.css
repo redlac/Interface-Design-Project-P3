@@ -1,0 +1,14 @@
+#homeImage{
+    display: flex;
+    justify-content: center;
+}
+
+#loginInfo, #greeting{
+    margin-left: 20%;
+    margin-right: 40%;
+}
+
+#loginBtn{
+    margin-left: 28%;
+    margin-right: 45%;
+}

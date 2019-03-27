@@ -1,7 +1,7 @@
-function getDate(){
-    n = new Date();
-    y = n.getFullYear();
-    m = n.getMonth() + 1;
-    d = n.getDate();
-    document.getElementById("header-currentDate").innerHTML = m + "/" + d + "/" + y;
+function getDate() {
+    let currentDate = new Date();
+    let year = currentDate.getFullYear();
+    let month = currentDate.getMonth() + 1;
+    let day = currentDate.getDate();
+    document.getElementById("date").innerHTML = month + "/" + day + "/" + year;
 }
