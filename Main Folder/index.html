@@ -30,13 +30,13 @@
                     <a href="home.html">HOME</a>
                 </th>
                 <th class="header-button">
-                    <a href="products.html">PRODUCTS</a>
+                    <a href="#">PRODUCTS</a>
                 </th>
                 <th class="header-button">
-                    <a href="orders.html">ORDERS</a>
+                    <a href="#" onclick="openScreen(event, 'tabs-Regular'); setTabActive();">ORDERS</a>
                 </th>
                 <th class="header-button">
-                    <a href="options.html">OPTIONS</a>
+                    <a href="#">OPTIONS</a>
                 </th>
             </tr>
         </table>
@@ -46,7 +46,7 @@
             <!-- Tab links -->
             <div class="tabs-tab">
                 <div class="tabs-outerTab">
-                    <div class="tabs-tablinks" onclick="openScreen(event, 'tabs-Regular')"><br>Regular</div>
+                    <div id="regular-tab" class="tabs-tablinks" onclick="openScreen(event, 'tabs-Regular')"><br>Regular</div>
                 </div>
                 <div class="tabs-outerTab">
                     <div class="tabs-tablinks" onclick="openScreen(event, 'tabs-Special')"><br>Special</div>
