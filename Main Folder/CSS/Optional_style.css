@@ -6,7 +6,7 @@ body
 div
 {
     border: 1px solid red;
-    width: 1000px;
+    width: 700px;
     margin: auto;
 }
 
@@ -23,7 +23,18 @@ form, tr, th, td
 {
     display: none;
 }
-th 
+table, tr
 {
-    width: 500px;
+    width: 650px;
+    margin: auto;
+    text-align: center;
+}
+input#input_number_field 
+{
+    width: 50px;
+}
+img
+{
+    width: 80px;
+    height: 80px;
 }
