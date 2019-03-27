@@ -13,7 +13,7 @@ const regularDatabase =
 		'description' : "Vine ripe tomatoes.",
 		'stock' : 78,
 		'quantity' : 0,
-		'picUrl' : "images/placeholder.png"
+		'picUrl' : "images/close-up-delicious-farming-1447297.jpg"
 	},
 	{
 		'itemID' : 1001,
@@ -21,7 +21,7 @@ const regularDatabase =
 		'description' : "Yellow ripened.",
 		'stock' : 1573,
 		'quantity' : 0,
-		'picUrl' : "images/placeholder.png"
+		'picUrl' : "images/bananas-bunch-food-41957.jpg"
 	},
 	{
 		'itemID' : 1002,
@@ -29,7 +29,7 @@ const regularDatabase =
 		'description' : "Fresh picked.",
 		'stock' : 15,
 		'quantity' : 0,
-		'picUrl' : "images/placeholder.png"
+		'picUrl' : "images/cucumbers-food-gherkins-8694.jpg"
 	},
 	{
 		'itemID' : 1003,
@@ -37,7 +37,7 @@ const regularDatabase =
 		'description' : "Navel (seeded).",
 		'stock' : 48,
 		'quantity' : 0,
-		'picUrl' : "images/placeholder.png"
+		'picUrl' : "images/citrus-food-fresh-42059.jpg"
 	},
 	{
 		'itemID' : 1004,
@@ -45,7 +45,7 @@ const regularDatabase =
 		'description' : "3KG Spiral",
 		'stock' : 6,
 		'quantity' : 0,
-		'picUrl' : "images/placeholder.png"
+		'picUrl' : "images/blur-close-up-cooking-161533.jpg"
 	},
 	{
 		'itemID' : 1005,
@@ -53,7 +53,7 @@ const regularDatabase =
 		'description' : "4KG skinless/boneless",
 		'stock' : 11,
 		'quantity' : 0,
-		'picUrl' : "images/placeholder.png"
+		'picUrl' : "images/chicken_breast_tenderloin.jpg"
 	}
 ];
 
