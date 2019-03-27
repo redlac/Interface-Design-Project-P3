@@ -97,6 +97,6 @@ const autoOrderDatabase =
 		'description' : "Makes you feel high, maaaaan.",
 		'stock' : 69,
 		'quantity' : 0,
-		'picUrl' : "images/placeholder.png"
+		'picUrl' : "images/mushroom.jpg"
 	}
 ];
