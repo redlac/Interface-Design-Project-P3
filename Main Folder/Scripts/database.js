@@ -10,7 +10,7 @@ const regularDatabase =
 	{
 		'itemID' : 1000,
 		'itemName' : "Tomato",
-		'description' : "Testeroni",
+		'description' : "Vine ripe tomatoes.",
 		'stock' : 78,
 		'quantity' : 0,
 		'picUrl' : "images/placeholder.png"
@@ -18,7 +18,7 @@ const regularDatabase =
 	{
 		'itemID' : 1001,
 		'itemName' : "Banana",
-		'description' : "Testeroni",
+		'description' : "Yellow ripened.",
 		'stock' : 1573,
 		'quantity' : 0,
 		'picUrl' : "images/placeholder.png"
@@ -26,8 +26,32 @@ const regularDatabase =
 	{
 		'itemID' : 1002,
 		'itemName' : "Cucumber",
-		'description' : "Testeroni",
+		'description' : "Fresh picked.",
 		'stock' : 15,
+		'quantity' : 0,
+		'picUrl' : "images/placeholder.png"
+	},
+	{
+		'itemID' : 1003,
+		'itemName' : "Orange",
+		'description' : "Navel (seeded).",
+		'stock' : 48,
+		'quantity' : 0,
+		'picUrl' : "images/placeholder.png"
+	},
+	{
+		'itemID' : 1004,
+		'itemName' : "Ham",
+		'description' : "3KG Spiral",
+		'stock' : 6,
+		'quantity' : 0,
+		'picUrl' : "images/placeholder.png"
+	},
+	{
+		'itemID' : 1005,
+		'itemName' : "Chicken Breast",
+		'description' : "4KG skinless/boneless",
+		'stock' : 11,
 		'quantity' : 0,
 		'picUrl' : "images/placeholder.png"
 	}
