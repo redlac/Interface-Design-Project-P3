@@ -1,11 +1,11 @@
 #bottomButton{
   width: 94%;
   height: 0px;
-  position:absolute;
+  position:fixed;
   bottom:0;
   cursor: pointer;
   align-items: center;
-  border-bottom: 40px solid yellow;
+  border-bottom: 40px solid #85CB33;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   text-align: center;
