@@ -44,7 +44,7 @@ document.getElementById("regular-view").onchange = function () {
         document.getElementById("regular-itemGrid").style.display = "none";
     }
 }
-
+console.log(regularDatabase);
 document.getElementById("regular-item-desc1").innerHTML = "<span>" + regularDatabase[0].itemName + "</span>"
                                                         + "<p>Stock: " + regularDatabase[0].stock + "</p>"
                                                         + "<p>" + regularDatabase[0].description + "</p>";
@@ -53,10 +53,13 @@ document.getElementById("regular-item-desc2").innerHTML = "<span>" + regularData
                                                         + "<p>Stock: " + regularDatabase[1].stock + "</p>"
                                                         + "<p>" + regularDatabase[1].description + "</p>";
 
-document.getElementById("regular-item-desc3").innerHTML = "<span>" + regularDatabase[1].itemName + "</span>"
-                                                        + "<p>Stock: " + regularDatabase[1].stock + "</p>"
-                                                        + "<p>" + regularDatabase[1].description + "</p>";
+document.getElementById("regular-item-desc3").innerHTML = "<span>" + regularDatabase[2].itemName + "</span>"
+                                                        + "<p>Stock: " + regularDatabase[2].stock + "</p>"
+                                                        + "<p>" + regularDatabase[2].description + "</p>";
 
 document.getElementById("regular-grid-item-desc1").innerHTML = "<span>" + regularDatabase[0].itemName + "</span>"; 
 document.getElementById("regular-grid-item-desc2").innerHTML = "<span>" + regularDatabase[1].itemName + "</span>"; 
 document.getElementById("regular-grid-item-desc3").innerHTML = "<span>" + regularDatabase[2].itemName + "</span>"; 
+document.getElementById("regular-grid-item-desc4").innerHTML = "<span>" + regularDatabase[3].itemName + "</span>"; 
+document.getElementById("regular-grid-item-desc5").innerHTML = "<span>" + regularDatabase[4].itemName + "</span>"; 
+document.getElementById("regular-grid-item-desc6").innerHTML = "<span>" + regularDatabase[5].itemName + "</span>"; 
