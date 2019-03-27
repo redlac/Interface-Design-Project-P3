@@ -1,6 +1,7 @@
 <head>
 <link rel="stylesheet" href="CSS/history-style.css">
 </head>
+<body>
 <div id="hBG">
 	<!--This is where you can select the dates and submit them/-->
 	<div id="hWiden">
@@ -19,19 +20,44 @@
 			<tr class="hTableStyle">
 				<td class="hTableCellStyle">34547535</td>
 				<td class="hTableCellStyle">34</td>
-				<td class="hTableCellStyle">01-15-2019</td>
-				<td class="hTableCellStyle">01-16-2019</td>
-				<td class="hTableCellStyle"><input type="button" value="View" id="hViewOrder" onClick="hViewOrder();">
-</td>
+				<td class="hTableCellStyle">03-15-2019</td>
+				<td class="hTableCellStyle">03-16-2019</td>
+				<td class="hTableCellStyle">Shipped</td>
+				<td class="hTableCellStyle"><input type="button" value="View" id="hViewOrder" onClick="hViewOrder();"></td>
+			</tr>
+			<tr class="hTableStyle">
+				<td class="hTableCellStyle">345457535</td>
+				<td class="hTableCellStyle">128</td>
+				<td class="hTableCellStyle">03-12-2019</td>
+				<td class="hTableCellStyle">03-13-2019</td>
+				<td class="hTableCellStyle">Shipped</td>
+				<td class="hTableCellStyle"><input type="button" value="View" id="hViewOrder" onClick="hViewOrder();"></td>
+			</tr>
+			<tr class="hTableStyle">
+				<td class="hTableCellStyle">34547464</td>
+				<td class="hTableCellStyle">128</td>
+				<td class="hTableCellStyle">03-20-2019</td>
+				<td class="hTableCellStyle"></td>
+				<td class="hTableCellStyle">Shipping</td>
+				<td class="hTableCellStyle"><input type="button" value="View" id="hViewOrder" onClick="hViewOrder();"></td>
 			</tr>
 		</table>
 		<div id="hSpaceButtons">
-			<input type="button" value="submit" id="hDateSubmit" onClick="hShowDateTables();">
+		<br>
+			<!--Truly, this is the most beautiful thing I have ever written./-->
+			<!--<input type="button" value="submit" id="hDateSubmit" onClick="hShowDateTables();">/-->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<input type="button" value="Print Selected Order" id="hPrintOrder" onClick="hPrintCurrentOrder();">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
 			<input type="button" value="Cancel Last Order" id="hClearSubmit" onClick="hClearUnshippedTable();">
 		</div>
 	</div>
 	<!--This is where all the tables will be added./-->
+	<!-- Or not./-->
 	<div id="hDateTables">
 
 	</div>
@@ -40,3 +66,4 @@
 	<div id="hButtonOptions">
 	</div>
 </div>
+</body>

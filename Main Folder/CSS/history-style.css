@@ -1,3 +1,7 @@
+body
+{
+	margin: 0;
+}
 #hBG
 {
 	display: flex;
@@ -26,7 +30,7 @@ h3
 .hTableStyle
 {
 	width: 100%;
-	height: 100px;
+	height: 70px;
 	text-align: center;
 	margin: 0;
     border: 1px solid black;
