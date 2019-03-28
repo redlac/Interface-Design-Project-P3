@@ -49,13 +49,29 @@ function removing_item(id)
         }
     }
     document.getElementById("table_output").deleteRow(row_num);
+    myIDs.splice((row_num - 1), 1);
 }
 
-function plus_quantity(val) 
+function plus_quantity() 
 {
-    var current_value = parseInt(document.getElementById("input_number_field").value);
-    var updated_value = (current_value + 1);
-    document.getElementById("plus_button").value = updated_value.toString();
+    console.log("check 1");
+    var current_value = document.getElementById("input_number_field").value;
+    var updated_value = Number(current_value) + 1;
+    console.log("check 1", current_value, updated_value);
+    document.getElementById("input_number_field").value = updated_value;
+}
+
+function minus_quantity() 
+{
+    console.log("check 2");
+    var current_value = document.getElementById("input_number_field").value;
+    var updated_value = Number(current_value) - 1;
+    if(updated_value < 0) 
+    {
+        updated_value = 0;
+    }
+    console.log("check 3", current_value, updated_value);
+    document.getElementById("input_number_field").value = updated_value;
 }
 
 function displayResult(length) {
@@ -92,11 +108,11 @@ function displayResult(length) {
             plus_button.innerHTML = "+";
             plus_button.setAttribute("id", "plus_button");
             plus_button.setAttribute("value", "+");
-            plus_button.setAttribute("onclick", `plus_quantity();`);
+            plus_button.setAttribute("onclick", "plus_quantity();");
             var minus_button = document.createElement("button");
             minus_button.innerHTML = "-";
             minus_button.setAttribute("value", "s");
-            minus_button.setAttribute("onclick", `minus_quantity();`);
+            minus_button.setAttribute("onclick", "minus_quantity();");
 
             var update_button = document.createElement("button");
             update_button.innerHTML = "Update";
