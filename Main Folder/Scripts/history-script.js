@@ -13,5 +13,8 @@ function hShowPreviousOrder()
 
 function hViewOrder()
 {
-	
+	alert("#1000, Tomato, x1\n" + 
+		"#1523, Ground Beef, x1\n" +
+		"#18536, Beyond Meat, x2\n" +
+		"#25269, Apricot Jam(1800), x1");
 }

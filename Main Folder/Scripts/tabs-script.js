@@ -39,3 +39,15 @@ function openScreen(evt, screenName) {
   document.getElementById(screenName).style.display = "block";
   evt.currentTarget.className += " active";
 } 
+
+function showCurrentOrder()
+{
+	
+	alert("#ID, Name, xAmount\n" + 
+		"#ID, Name, xAmount\n" +
+		"#ID, Name, xAmount\n" +
+		"#ID, Name, xAmount\n" +
+		"#ID, Name, xAmount\n" +
+		"#ID, Name, xAmount\n" +
+		"#ID, Name, xAmount\n");
+}
