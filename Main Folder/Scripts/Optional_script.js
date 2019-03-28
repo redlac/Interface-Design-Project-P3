@@ -16,10 +16,7 @@ function database_array()
         myData.push(autoOrderDatabase[i]);
     }
     console.log(myData);
-
 }
-
-
 
 function enabling() {
     if (document.getElementById("auto_add_item").checked == true) {
@@ -54,6 +51,13 @@ function removing_item(id)
     document.getElementById("table_output").deleteRow(row_num);
 }
 
+function plus_quantity(val) 
+{
+    var current_value = parseInt(document.getElementById("input_number_field").value);
+    var updated_value = (current_value + 1);
+    document.getElementById("plus_button").value = updated_value.toString();
+}
+
 function displayResult(length) {
     var flag = true;
     const myTable = document.querySelector("#table_output");
@@ -82,9 +86,11 @@ function displayResult(length) {
             var input_number = document.createElement("input");
             input_number.setAttribute("type", "text");
             input_number.setAttribute("id", "input_number_field");
+            //input_number.setAttribute("value", "0");
 
             var plus_button = document.createElement("button");
             plus_button.innerHTML = "+";
+            plus_button.setAttribute("id", "plus_button");
             plus_button.setAttribute("value", "+");
             plus_button.setAttribute("onclick", `plus_quantity();`);
             var minus_button = document.createElement("button");
@@ -123,7 +129,7 @@ function displayResult(length) {
             update_remove.append(update_button);
             update_remove.append(remove_button);
             
-            document.getElementById("output_result").innerHTML = parseInt(obj.itemID).toString() + " at Index: " + myData.indexOf(obj) + " and ranked at positon: " + (myData.indexOf(obj) + 1);
+            //document.getElementById("output_result").innerHTML = parseInt(obj.itemID).toString() + " at Index: " + myData.indexOf(obj) + " and ranked at positon: " + (myData.indexOf(obj) + 1);
             console.log(parseInt(obj.itemID).toString() + " at Index: " + myData.indexOf(obj) + " and ranked at positon: " + (myData.indexOf(obj) + 1));
         }
     }
