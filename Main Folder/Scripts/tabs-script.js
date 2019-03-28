@@ -23,21 +23,37 @@ function openScreen(evt, screenName) {
     case "tabs-Special":
       /* TODO: change page url */ 
       document.getElementById(screenName).innerHTML = '<object type="text/html" data="special_tab.html" width="100%" height="100%" style="overflow: hidden;"></object>';
-      document.getElementById("regular-tab").className.replace(" active", "");
+      if (document.getElementById("regular-tab").className.includes(" active"))
+      {
+            document.getElementById("regular-tab").className = "tabs-tablinks";
+      }
       break;
     case "tabs-History":
-      /* TODO: change page url */ 
       document.getElementById(screenName).innerHTML = '<object type="text/html" data="history_tab.html" width="100%" height="100%" style="overflow: hidden;"></object>';
-      document.getElementById("regular-tab").className.replace(" active", "");
+      if (document.getElementById("regular-tab").className.includes(" active"))
+      {
+            console.log("here");
+            document.getElementById("regular-tab").className = "tabs-tablinks";
+      }
       break;
     case "tabs-OrderOptions":
-      /* TODO: change page url */ 
       document.getElementById(screenName).innerHTML = '<object type="text/html" data="Optional_tab.html" width="100%" height="100%" style="overflow: hidden;"></object>';
-      document.getElementById("regular-tab").className.replace(" active", "");
+      if (document.getElementById("regular-tab").className.includes(" active"))
+      {
+            console.log("here");
+            document.getElementById("regular-tab").className = "tabs-tablinks";
+      }
       break;
   }
   document.getElementById(screenName).style.display = "block";
   evt.currentTarget.className += " active";
+  /*
+      if (!document.getElementById("regular-tab").className.includes(" active active"))
+      {
+            console.log("here");
+            document.getElementById("regular-tab").className -= " active active";
+      }
+      */
 } 
 
 function showCurrentOrder()
