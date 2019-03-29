@@ -15,33 +15,30 @@ function openScreen(evt, screenName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  switch (screenName){
+  switch (screenName) {
     case "tabs-Regular":
       document.getElementById(screenName).innerHTML = '<object type="text/html" data="regular_tab.html" width="100%" height="100%" style="overflow: hidden;"></object>';
       document.getElementById("regular-tab").className += " active";
       break;
     case "tabs-Special":
-      /* TODO: change page url */ 
+      /* TODO: change page url */
       document.getElementById(screenName).innerHTML = '<object type="text/html" data="special_tab.html" width="100%" height="100%" style="overflow: hidden;"></object>';
-      if (document.getElementById("regular-tab").className.includes(" active"))
-      {
-            document.getElementById("regular-tab").className = "tabs-tablinks";
+      if (document.getElementById("regular-tab").className.includes(" active")) {
+        document.getElementById("regular-tab").className = "tabs-tablinks";
       }
       break;
     case "tabs-History":
       document.getElementById(screenName).innerHTML = '<object type="text/html" data="history_tab.html" width="100%" height="100%" style="overflow: hidden;"></object>';
-      if (document.getElementById("regular-tab").className.includes(" active"))
-      {
-            console.log("here");
-            document.getElementById("regular-tab").className = "tabs-tablinks";
+      if (document.getElementById("regular-tab").className.includes(" active")) {
+        console.log("here");
+        document.getElementById("regular-tab").className = "tabs-tablinks";
       }
       break;
     case "tabs-OrderOptions":
       document.getElementById(screenName).innerHTML = '<object type="text/html" data="Optional_tab.html" width="100%" height="100%" style="overflow: hidden;"></object>';
-      if (document.getElementById("regular-tab").className.includes(" active"))
-      {
-            console.log("here");
-            document.getElementById("regular-tab").className = "tabs-tablinks";
+      if (document.getElementById("regular-tab").className.includes(" active")) {
+        console.log("here");
+        document.getElementById("regular-tab").className = "tabs-tablinks";
       }
       break;
   }
@@ -54,16 +51,9 @@ function openScreen(evt, screenName) {
             document.getElementById("regular-tab").className -= " active active";
       }
       */
-} 
+}
 
-function showCurrentOrder()
-{
-	
-	alert("#ID, Name, xAmount\n" + 
-		"#ID, Name, xAmount\n" +
-		"#ID, Name, xAmount\n" +
-		"#ID, Name, xAmount\n" +
-		"#ID, Name, xAmount\n" +
-		"#ID, Name, xAmount\n" +
-		"#ID, Name, xAmount\n");
+function showCurrentOrder() {
+  //var data_file = new database_array();
+  //alert(test());
 }

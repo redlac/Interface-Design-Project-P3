@@ -1,4 +1,4 @@
-#bottomButton{
+#myBtn{
   width: 94%;
   height: 0px;
   position:fixed;
@@ -13,7 +13,7 @@
 
  }
  
- #bottomButton:hover {
+ #myBtn:hover {
   border-bottom: 40px solid #e63946;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;

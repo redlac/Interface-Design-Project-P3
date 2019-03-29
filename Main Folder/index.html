@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="CSS/tabs-style.css">
     <link rel="stylesheet" href="CSS/regular-style.css">
     <link rel="stylesheet" href="CSS/history-style.css">
-	
+
     <link rel="stylesheet" href="CSS/bottom-style.css">
-	
-  
+
+    <link rel="stylesheet" href="CSS/bottom_current.css">
+
 </head>
 
 <body onload="getDate()">
@@ -21,7 +22,7 @@
             <span>Currentdate <span id="header-currentDate"></span></span><br>
             <span>Cut Off time: 5:00 p.m.</span>
         </div>
-        <div id="header-headerImage" >
+        <div id="header-headerImage">
             <img class="header-headimage" src="images/shutterstock_288575585-1000x300.jpg" alt="gg">
         </div><br><br>
         <table id="header-table">
@@ -46,7 +47,8 @@
             <!-- Tab links -->
             <div class="tabs-tab">
                 <div class="tabs-outerTab">
-                    <div id="regular-tab" class="tabs-tablinks" onclick="openScreen(event, 'tabs-Regular')"><br>Regular</div>
+                    <div id="regular-tab" class="tabs-tablinks" onclick="openScreen(event, 'tabs-Regular')"><br>Regular
+                    </div>
                 </div>
                 <div class="tabs-outerTab">
                     <div class="tabs-tablinks" onclick="openScreen(event, 'tabs-Special')"><br>Special</div>
@@ -69,21 +71,93 @@
             </div>
 
             <div id="tabs-History" class="tabs-tabcontent">
-				
+
             </div>
-            
+
             <div id="tabs-OrderOptions" class="tabs-tabcontent">
                 <h3>Order Options</h3>
                 <p>(content here)</p>
             </div>
         </div>
     </div>
-	
-<div id="bottomButton" onClick="showCurrentOrder()">
-Current Order
-</div>
-	
+
+    <!-- <div id="bottomButton"> -->
+    <button id="myBtn">Open Modal</button>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Current Order</h2>
+            </div>
+            <div class="modal-body">
+                    <table id="table_current_output">
+                            <tr>
+                                <th>Product ID</th>
+                                <th>Product</th>
+                                <th>Description</th>
+                                <th>Stock</th>
+                                <th>Quantity</th>
+                            </tr>
+                            <tr>
+                                <td>1000</td>
+                                <td><img src="images/close-up-delicious-farming-1447297.jpg"></td>
+                                <td>Tomato<br>Vine ripe tomatoes.</td>
+                                <td>78</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1001</td>
+                                <td><img src="images/bananas-bunch-food-41957.jpg"></td>
+                                <td>Banana<br>Yellow ripened.</td>
+                                <td>1573</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1002</td>
+                                <td><img src="images/cucumbers-food-gherkins-8694.jpg"></td>
+                                <td>Cucumber<br>Fresh picked.</td>
+                                <td>15</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1003</td>
+                                <td><img src="images/citrus-food-fresh-42059.jpg"></td>
+                                <td>Orange<br>Navel (seeded).</td>
+                                <td>48</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1004</td>
+                                <td><img src="images/blur-close-up-cooking-161533.jpg"></td>
+                                <td>Orange<br>Navel (seeded).</td>
+                                <td>6</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1005</td>
+                                <td><img src="images/chicken_breast_tenderloin.jpg"></td>
+                                <td>Chicken Breast<br>4KG skinless/boneless</td>
+                                <td>11</td>
+                                <td>1</td>
+                            </tr>
+                        </table>
+            </div>
+            <div class="modal-footer">
+                <!-- <button class="close">Add</button>
+                <button class="close">Close</button> -->
+                <!-- <h3>Modal Footer</h3> -->
+
+            </div>
+        </div>
+
+    </div>
+    <!-- </div> -->
+
     <script src="scripts/header-js.js"></script>
     <script src="scripts/tabs-script.js"></script>
     <script src="scripts/regular-js.js"></script>
+    <script src="Scripts/bottom_current.js"></script>
+    <script src="Scripts/Optional_script.js"></script>
 </body>

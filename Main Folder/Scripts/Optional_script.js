@@ -2,7 +2,6 @@ var flag = true;
 var check_box1, check_box2, check_box3;
 var item_num, data_file;
 let myData = [], myIDs = [];
-
 function database_array() 
 {
     //Reseting array to empty array
@@ -149,4 +148,9 @@ function displayResult(length) {
             console.log(parseInt(obj.itemID).toString() + " at Index: " + myData.indexOf(obj) + " and ranked at positon: " + (myData.indexOf(obj) + 1));
         }
     }
+}
+
+function saveButton() 
+{
+    alert("All items saved to automatic order list.");
 }

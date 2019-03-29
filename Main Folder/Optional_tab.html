@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Optional tab</title>
     <link rel="stylesheet" href="CSS/Optional_style.css">
-    <script src="Scripts/Optional_script.js"></script>
-    <script src="Scripts/database.js"></script>
+    
 </head>
 <body>
     <div id="optional_tab_container">
@@ -22,7 +21,8 @@
             <input type="checkbox" name="checkbox3" id="auto_add_item"  onclick="enabling();">Automatically add item to every order at the start of every order.<br>
             <form id="add_item" onsubmit="return false">
                 <label for="item_num">Item #</label><br>
-                <input type="text" name="item_#" id="input_item" disabled> <button id="view_current_order" disabled>View Current Order</button> <br>
+                <input type="text" name="item_#" id="input_item" disabled> 
+                <!-- <button id="view_current_order" disabled>View Current Order</button> <br> -->
                 <input type="button" value="Add" name="search_item_button" id="search_item_num" onclick="getData();" disabled><br>
             </form>
         </div>
@@ -40,8 +40,12 @@
             <p id="output_result"></p>
         </div>
         <div id="div_save">
-            <button type="save" name="save_button" id="save_option" onclick="getData();">Save</button>
+            <button type="save" name="save_button" id="save_option" onclick="saveButton();">Save</button>
         </div>
     </div>
+    
+    <script src="Scripts/Optional_script.js"></script>
+    <script src="Scripts/database.js"></script>
+    <script src="Scripts/bottom_current.js"></script>
 </body>
 </html>
