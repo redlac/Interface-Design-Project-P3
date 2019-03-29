@@ -17,25 +17,27 @@
 
             <div id="special-search-input">
                 <div>
-                    <label for="special-name">Name :</label>
+                    <label for="special-name">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                     <input type="text" name="" id="special-name">
                 </div>
                 <div>
-                    <label for="special-id">Product Id</label>
+                    <label for="special-id">ProductId:&nbsp;&nbsp;&nbsp;</label>
                     <input type="text" name="" id="special-id">
                 </div>
                 <div>
-                    <label for="special-description">Description</label>
+                    <label for="special-description">Description:</label>
                     <input type="text" name="" id="special-description">
                 </div>
-                <div>
+                <div class="center">
                     <input type="button" name="" value="Search" onclick="populateStuff()" id="">
                 </div>
             </div>
             <div id="searchOutput" class="hidden">
                 <div id="special-itemList">
                     <div class="special-item-one">
-                        <img src="" alt="Oh no" id="special-item-image-one">
+                        <div id="special-image-tainer">
+                            <img src="" alt="Oh no" id="special-item-image-one">
+                        </div>
                         <div id="special-item-desc-one">description</div>
                         <div class="special-listQty">
                             <input id="special-ListQty1" type="number" value="0" min="0">
@@ -46,22 +48,10 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="special-item-two">
-                        <img src="" alt="Oh no!" id="special-item-image-two">
-                        <div id="special-item-desc-two">description</div>
-                        <div class="special-listQty">
-                            <input id="special-ListQty2" type="number" value="0" min="0">
-                            <div>
-                                <input type="button" value="+" class="special-QtyPlus" onclick="specialListPlusQty(1);">
-                                <input type="button" value="-" class="special-QtyMinus"
-                                    onclick="specialListMinusQty(1);">
-                            </div>
-                        </div>
-                    </div>
                 </div>
-
-                <input id="special-placeOrder" type="submit" value="Add To Order" onclick="specialAddToOrder()">
+                <div class="center" id="center">
+                    <input id="special-placeOrder" type="submit" value="Add To Order" onclick="specialAddToOrder()">
+                </div>
 
                 <p id="special-confirmation" class="hidden">
                     Added To Order
