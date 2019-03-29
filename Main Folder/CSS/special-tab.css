@@ -1,75 +1,87 @@
-body{
+body {
     margin: 0;
 }
 
-h4{
+h4 {
     margin: 0;
 }
+
 /* Remove arrows from number inputs*/
 input[type=number] {
-    -moz-appearance:textfield;
+    -moz-appearance: textfield;
     width: 2vw;
     height: 3.1vw;
     text-align: center;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    margin: 0; 
+    margin: 0;
 }
 
-.hidden{
+.center {
+    text-align: center;
+}
+
+.hidden {
     display: none;
 }
 
-.special-item-image1{
+.special-item-image1 {
     background-image: url("../images/close-up-delicious-farming-1447297.jpg");
     background-size: cover;
 }
 
-.special-item-image2{
+.special-item-image2 {
     background-image: url("../images/bananas-bunch-food-41957.jpg");
     background-size: cover;
 }
 
-.special-item-image3{
+.special-item-image3 {
     background-image: url("../images/cucumbers-food-gherkins-8694.jpg");
     background-size: cover;
 }
 
-.special-item-image4{
+.special-item-image4 {
     background-image: url("../images/citrus-food-fresh-42059.jpg");
     background-size: cover;
 }
 
-.special-item-image5{
+.special-item-image5 {
     background-image: url("../images/blur-close-up-cooking-161533.jpg");
     background-size: cover;
 }
 
-.special-item-image6{
+.special-item-image6 {
     background-image: url("../images/chicken_breast_tenderloin.jpg");
     background-size: cover;
 }
 
-.special-item-image1, .special-item-image2, .special-item-image3, .special-item-image4, .special-item-image5, .special-item-image6{
+.special-item-image1,
+.special-item-image2,
+.special-item-image3,
+.special-item-image4,
+.special-item-image5,
+.special-item-image6 {
     width: 80px;
     height: 80px;
     margin: 5px;
 }
 
-#special-item-desc1, #special-item-desc2{
+#special-item-desc1,
+#special-item-desc2 {
     width: 10vw;
 }
 
-#special-item-desc1 > p, #special-item-desc2 > p{
+#special-item-desc1>p,
+#special-item-desc2>p {
     margin: 0;
 }
 
-#special-order{
+#special-order {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,17 +89,17 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: #E6E8E6;
 }
 
-#special-view{
+#special-view {
     width: 6vw;
     margin-bottom: 2vw;
 }
 
-#special-placeOrder{
+#special-placeOrder {
     margin-top: 2vw;
     width: 10vw;
 }
 
-#confirm-popup{
+#confirm-popup {
     display: none;
     width: 23vw;
     height: 12vw;
@@ -96,52 +108,52 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* Styles for item list view */
 
-.special-listQty{
+.special-listQty {
     display: flex;
     width: 5.2vw;
 }
 
-.special-listQty > input{
+.special-listQty>input {
     height: 40px;
 }
 
-.special-listQty > div{
+.special-listQty>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 45px;
 }
 
-.special-listQty > div > input{
+.special-listQty>div>input {
     height: 25px;
 }
 
-#special-itemList .special-item-image{ 
+#special-itemList .special-item-image {
     width: 4vw;
     height: 4vw;
     border: 1px solid black;
     margin-right: 0.5vw;
 }
 
-#special-itemList #special-item-desc{
+#special-itemList #special-item-desc {
     width: 15vw;
     border: 1px solid black;
     margin-right: 0.5vw;
 }
 
-#special-itemList #special-item-qty{
+#special-itemList #special-item-qty {
     width: 3vw;
     margin-right: 0.5vw;
 }
 
-#special-itemList{
+#special-itemList {
     height: 15vw;
     width: 27vw;
     overflow-y: scroll;
     border: 2px solid gray;
 }
 
-#special-itemList > div{
+#special-itemList>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -151,23 +163,23 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*Styles for item grid view */
 
-.special-gridRow{
+.special-gridRow {
     display: flex;
     margin-bottom: 0.6vw;
 }
 
-.special-gridRow > .special-item-image1{
+.special-gridRow>.special-item-image1 {
     width: 80px;
     height: 80px;
 }
 
-.special-gridQty > input{
+.special-gridQty>input {
     width: 30px;
     height: 30px;
     text-align: center;
 }
 
-#special-itemGrid{
+#special-itemGrid {
     display: none;
     flex-direction: column;
     height: 15vw;
@@ -177,7 +189,7 @@ input[type=number]::-webkit-outer-spin-button {
     border: 2px solid gray;
 }
 
-#special-itemGrid .special-item{
+#special-itemGrid .special-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,14 +197,14 @@ input[type=number]::-webkit-outer-spin-button {
     width: 10vw;
 }
 
-#special-itemGrid .special-item-image{ 
+#special-itemGrid .special-item-image {
     width: 6.1vw;
     height: 6.1vw;
     border: 1px solid black;
     margin-bottom: 0.5vw;
 }
 
-#special-itemGrid #special-item-desc{
+#special-itemGrid #special-item-desc {
     width: 6.1vw;
     border: 1px solid black;
     margin-bottom: 0.5vw;
@@ -218,4 +230,12 @@ font-size: 300%;
     display: flex;
     justify-content: center;
     margin-top: 10px;
+#special-confirmation {
+    font-size: 300%;
+}
+
+#special-image-tainer,
+#special-item-image-one {
+    max-width: 80px;
+    max-height: 80px;
 }
