@@ -57,24 +57,15 @@ const regularDatabase =
 	}
 ];
 
-const specialDatabase =
-[
-	{
-		'itemID' : 6327,
-		'itemName' : "Ash Brick",
-		'description' : "Testeroni",
-		'stock' : 26,
-		'quantity' : 0,
-		'picUrl' : "../images/placeholder.png"
-	},
-	{
-		'itemID' : 6338,
-		'itemName' : "Ash Dust",
-		'description' : "Testeroni",
-		'stock' : 5,
-		'quantity' : 0,
-		'picUrl' : "../images/placeholder.png"
-	}
+const specialDatabase = [{
+        'itemID': 6327,
+        'itemName': "Ash Brick",
+        'description': "Weight:3kg<br>Height:2 inches<br>Length:8 inches",
+        'stock': 26,
+        'quantity': 0,
+        'picUrl': "images/AshBrick.jpg",
+        'reference':"https://www.justdial.com/Vijayawada/SRI-DURGA-Bhavani-Flyash-Bricks-MYLAVARAM-Ibrahimpatnam/0866PX866-X866-180117200512-Z4H6_BZDET/photos"
+    },
 ];
 
 const historyDatabase =
