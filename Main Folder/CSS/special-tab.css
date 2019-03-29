@@ -147,7 +147,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #special-itemList {
-    height: 14vw;
+    height: 12vw;
     width: 27vw;
     overflow-y: scroll;
     border: 2px solid gray;
