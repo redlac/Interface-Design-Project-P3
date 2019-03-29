@@ -230,6 +230,8 @@ font-size: 300%;
     display: flex;
     justify-content: center;
     margin-top: 10px;
+}
+
 #special-confirmation {
     font-size: 300%;
 }
