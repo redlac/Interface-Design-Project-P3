@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="CSS/history-style.css">
 <script src="scripts/history-script.js"></script>
 </head>
-<body>
+<body onload="getDate()">
 <div id="hBG">
 	<!--This is where you can select the dates and submit them/-->
 	<div id="hWiden">
@@ -37,7 +37,7 @@
 			<tr class="hTableStyle" id="clearLastOne">
 				<td class="hTableCellStyle">34547464</td>
 				<td class="hTableCellStyle">9</td>
-				<td class="hTableCellStyle">03-20-2019</td>
+				<td class="hTableCellStyle" id="currentOrderDate">03-20-2019</td>
 				<td class="hTableCellStyle"></td>
 				<td class="hTableCellStyle">Shipping</td>
 				<td class="hTableCellStyle"><input type="button" value="View""></td>

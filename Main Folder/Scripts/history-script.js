@@ -18,3 +18,10 @@ function hViewOrder()
 		"#18536, Beyond Meat, x2\n" +
 		"#25269, Apricot Jam(1800), x1");
 }
+function getDate(){
+	n = new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+	d = n.getDate();
+    document.getElementById("currentOrderDate").innerHTML = m + "/" + d + "/" + y;
+}

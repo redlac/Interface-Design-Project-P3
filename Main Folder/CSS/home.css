@@ -14,19 +14,46 @@ display: none;
 #homeImage {
     display: flex;
     justify-content: center;
-}
-
-#loginInfo,
-#greeting {
-    margin-left: 40%;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
 }
 
 #greeting{
-font-size: 200%;
+    font-size: 200%;
+    text-align: center;
 }
 
 #newOrderBtn {
     display: flex;
     font-size: 24px;
     justify-content: center;
+}
+
+#loginBtn{
+    height: 25px;
+    text-align: center;
+    font-size:16px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#loginInfo{
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#loginInfo > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#login{
+    width: 100%;
 }

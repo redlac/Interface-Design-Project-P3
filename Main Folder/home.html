@@ -28,34 +28,36 @@
                     <a href="home.html">HOME</a>
                 </th>
                 <th class="header-button">
-                    <a href="products.html">PRODUCTS</a>
+                    <a href="#">PRODUCTS</a>
                 </th>
                 <th class="header-button">
                     <a href="index.html">ORDERS</a>
                 </th>
                 <th class="header-button">
-                    <a href="options.html">OPTIONS</a>
+                    <a href="#">OPTIONS</a>
                 </th>
             </tr>
         </table>
     </div>
     <div id="homeImage">
-        <img src="images/placeholder.png" alt="">
+        <img src="images/home_image.jpg" alt="">
     </div>
     <h1 id="greeting"></h1>
     <div id="loginInfo">
         <h3>Login</h3>
-        <label for="username">UserName</label>
-        <input type="text" id="username"><br>
-        <label for="password">Password</label>
-        <input type="text" name="password" id="password"><br>
-        <span id="loginBtn">
-            <input type="button" class="btn" id="login" value="Login" onclick="valiadeLogin()">
-        </span>
+        <div>
+            <label for="username">UserName: </label>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input type="text" name="password" id="password">
+        </div>
+        <input id="loginBtn" type="button" class="btn" id="login" value="Login" onclick="validateLogin()"></input>
     </div>
     <form action="">
         <div id="newOrderBtn">
-            <input type="button" class="btn" id="" value="Start New Order" onclick="window.location.href='index.html'">
+            <input type="button" class="btn" id="" value="Start New Order" onclick="window.location.href='index.html'"></input>
         </div>
     </form>
 </body>

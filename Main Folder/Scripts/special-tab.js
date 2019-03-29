@@ -29,19 +29,12 @@ function specialListPlusQty(itemNumber) {
 const specialDatabase = [{
         'itemID': 6327,
         'itemName': "Ash Brick",
-        'description': "Testeroni",
+        'description': "Weight:3kg<br>Height:2 inches<br>Length:8 inches",
         'stock': 26,
         'quantity': 0,
-        'picUrl': "images/placeholder.png"
+        'picUrl': "images/AshBrick.jpg",
+        'reference':"https://www.justdial.com/Vijayawada/SRI-DURGA-Bhavani-Flyash-Bricks-MYLAVARAM-Ibrahimpatnam/0866PX866-X866-180117200512-Z4H6_BZDET/photos"
     },
-    {
-        'itemID': 6338,
-        'itemName': "Ash Dust",
-        'description': "Testeroni",
-        'stock': 5,
-        'quantity': 0,
-        'picUrl': "images/placeholder.png"
-    }
 ];
 
 function populateStuff() {
@@ -50,13 +43,6 @@ function populateStuff() {
     document.getElementById("special-item-desc-one").innerHTML = "<h4>" + specialDatabase[0].itemName + "</h4>" +
         "<p>Stock: " + specialDatabase[0].stock + "</p>" +
         "<p>" + specialDatabase[0].description + "</p>";
-
-
-
-    document.getElementById("special-item-image-two").setAttribute("src", specialDatabase[1].picUrl);
-    document.getElementById("special-item-desc-two").innerHTML = "<h4>" + specialDatabase[1].itemName + "</h4>" +
-    "<p>Stock: " + specialDatabase[1].stock + "</p>" +
-    "<p>" + specialDatabase[1].description + "</p>";
 }
 
 function specialAddToOrder(){
