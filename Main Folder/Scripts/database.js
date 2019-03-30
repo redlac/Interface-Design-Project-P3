@@ -84,9 +84,9 @@ const autoOrderDatabase =
 [
 	{
 		'itemID' : 24677,
-		'itemName' : "Mario Mushroom",
-		'description' : "Makes you feel high, maaaaan.",
-		'stock' : 69,
+		'itemName' : "Brown Mushrooms",
+		'description' : "12 x 454G Unwashed",
+		'stock' : 37,
 		'quantity' : 0,
 		'picUrl' : "images/mushroom.jpg"
 	}
