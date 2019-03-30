@@ -5,6 +5,11 @@ body{
 h4{
     margin: 0;
 }
+
+h3{
+    margin: 11px 2px 0 0;
+}
+
 /* Remove arrows from number inputs*/
 input[type=number] {
     -moz-appearance:textfield;
@@ -94,7 +99,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .regular-listQty{
     display: flex;
-    width: 5.2vw;
+    width:6.5vw;
 }
 
 .regular-listQty > input{
