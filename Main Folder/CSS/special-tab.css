@@ -212,7 +212,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #special-confirmation{
-font-size: 300%;
+    font-size: 300%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #special-search-input{
