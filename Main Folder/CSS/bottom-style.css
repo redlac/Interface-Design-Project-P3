@@ -10,7 +10,8 @@
   border-right: 40px solid transparent;
   text-align: center;
   font-size: x-large;
-
+  margin: 0 3%;
+  background-color: #e6e8e6;
  }
  
  #myBtn:hover {
