@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="optional_tab_container">
-        <h1>Optional Setting</h1>
+        <h1>Optional Settings</h1>
         <div id="box_option_1">
             <input type="checkbox" name="checkbox1" id="receive_email">Receive email whenever commonly ordered item is low on stock.<br>
         </div>
@@ -18,7 +18,7 @@
             <input type="checkbox" name="checkbox2" id="auto_submit_cutoff">Automatically submit ordered at cutoff time.<br>
         </div>
         <div id="box_option_3"> 
-            <input type="checkbox" name="checkbox3" id="auto_add_item"  onclick="enabling();">Automatically add item to every order at the start of every order.<br>
+            <input type="checkbox" name="checkbox3" id="auto_add_item"  onclick="enabling();">Automatically add item to every order at the start of every newly created order.<br>
             <form id="add_item" onsubmit="return false">
                 <label for="item_num">Item #</label><br>
                 <input type="text" name="item_#" id="input_item" disabled> 
