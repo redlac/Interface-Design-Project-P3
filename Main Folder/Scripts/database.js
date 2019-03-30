@@ -19,7 +19,7 @@ const regularDatabase =
 		'itemID' : 1001,
 		'itemName' : "Banana",
 		'description' : "Yellow ripened.",
-		'stock' : 1573,
+		'stock' : 150,
 		'quantity' : 0,
 		'picUrl' : "images/bananas-bunch-food-41957.jpg"
 	},
