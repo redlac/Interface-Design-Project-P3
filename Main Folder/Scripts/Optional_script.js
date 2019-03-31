@@ -1,17 +1,16 @@
 var flag = true;
 var check_box1, check_box2, check_box3;
 var item_num, data_file;
-let myData = [], myIDs = [];
-function database_array() 
-{
+let myData = [],
+    myIDs = [];
+
+function database_array() {
     //Reseting array to empty array
     myData = [];
-    for(var i = 0; i < regularDatabase.length; i++) 
-    {
+    for (var i = 0; i < regularDatabase.length; i++) {
         myData.push(regularDatabase[i]);
     }
-    for(var i = 0; i < autoOrderDatabase.length; i++) 
-    {
+    for (var i = 0; i < autoOrderDatabase.length; i++) {
         myData.push(autoOrderDatabase[i]);
     }
     console.log(myData);
@@ -29,30 +28,25 @@ function enabling() {
     }
 }
 
-function getData() 
-{
+function getData() {
     item_num = document.getElementById("input_item").value;
     data_file = new database_array();
     const table_length = document.getElementById("table_output").rows.length;
     displayResult(table_length)
 }
 
-function removing_item(id) 
-{
+function removing_item(id) {
     var row_num;
-    for(var i = 0; i < myIDs.length; i++) 
-    {
-        if(id == myIDs[i]) 
-        {
-            row_num = (i+1);
+    for (var i = 0; i < myIDs.length; i++) {
+        if (id == myIDs[i]) {
+            row_num = (i + 1);
         }
     }
     document.getElementById("table_output").deleteRow(row_num);
     myIDs.splice((row_num - 1), 1);
 }
 
-function plus_quantity() 
-{
+function plus_quantity() {
     console.log("check 1");
     var current_value = document.getElementById("input_number_field").value;
     var updated_value = Number(current_value) + 1;
@@ -60,13 +54,11 @@ function plus_quantity()
     document.getElementById("input_number_field").value = updated_value;
 }
 
-function minus_quantity() 
-{
+function minus_quantity() {
     console.log("check 2");
     var current_value = document.getElementById("input_number_field").value;
     var updated_value = Number(current_value) - 1;
-    if(updated_value < 0) 
-    {
+    if (updated_value < 0) {
         updated_value = 0;
     }
     console.log("check 3", current_value, updated_value);
@@ -80,24 +72,20 @@ function displayResult(length) {
     console.log(myTable);
     console.log(flag, table_length);
     document.getElementById("div_output").style.display = "block";
-    for(var i = 0; i < myIDs.length; i++) 
-    {
-        if(item_num == myIDs[i]) 
-        {
+    for (var i = 0; i < myIDs.length; i++) {
+        if (item_num == myIDs[i]) {
             flag = false;
         }
     }
     console.log(flag);
-    for(let obj of myData) 
-    {   
+    for (let obj of myData) {
         console.log(flag);
-        if(obj.itemID == parseInt(item_num) && flag) 
-        {   
+        if (obj.itemID == parseInt(item_num) && flag) {
             myIDs.push(obj.itemID);
 
             var image = document.createElement("img");
             image.setAttribute("src", obj.picUrl);
-            
+
             var input_number = document.createElement("input");
             input_number.setAttribute("type", "text");
             input_number.setAttribute("id", "input_number_field");
@@ -143,14 +131,13 @@ function displayResult(length) {
             var update_remove = row.insertCell(5);
             update_remove.append(update_button);
             update_remove.append(remove_button);
-            
+
             //document.getElementById("output_result").innerHTML = parseInt(obj.itemID).toString() + " at Index: " + myData.indexOf(obj) + " and ranked at positon: " + (myData.indexOf(obj) + 1);
             console.log(parseInt(obj.itemID).toString() + " at Index: " + myData.indexOf(obj) + " and ranked at positon: " + (myData.indexOf(obj) + 1));
         }
     }
 }
 
-function saveButton() 
-{
+function saveButton() {
     alert("All items saved to automatic order list.");
 }

@@ -1,65 +1,65 @@
  /* Style the tab */
-.tabs-tab {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  background-color: #eca400;
-}
+ .tabs-tab {
+   display: flex;
+   justify-content: center;
+   overflow: hidden;
+   background-color: #eca400;
+ }
 
-/* Style the buttons that are used to open the tab content */
-.tabs-tablinks{
-  background-color: inherit;
-  outline: none;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 12vw;
-  height: 0px;
-  border-bottom: 40px solid #b1b1b1;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
-  text-align: center;
-  font-size: x-large;
-  padding-bottom: 19px;
-}
+ /* Style the buttons that are used to open the tab content */
+ .tabs-tablinks {
+   background-color: inherit;
+   outline: none;
+   cursor: pointer;
+   transition: 0.3s;
+   width: 12vw;
+   height: 0px;
+   border-bottom: 40px solid #b1b1b1;
+   border-left: 40px solid transparent;
+   border-right: 40px solid transparent;
+   text-align: center;
+   font-size: x-large;
+   padding-bottom: 19px;
+ }
 
-.tabs-outerTab{
-    background-color: #eca400;
-    padding: 0;
-}
+ .tabs-outerTab {
+   background-color: #eca400;
+   padding: 0;
+ }
 
-/* Change background color of buttons on hover */
-.tabs-outerTab div:hover {
-  border-bottom: 40px solid #e63946;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
-}
+ /* Change background color of buttons on hover */
+ .tabs-outerTab div:hover {
+   border-bottom: 40px solid #e63946;
+   border-left: 40px solid transparent;
+   border-right: 40px solid transparent;
+ }
 
-/* Create an active/current tablink class */
-.tabs-outerTab div.active {
-  border-bottom: 40px solid #e63946;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
-}
+ /* Create an active/current tablink class */
+ .tabs-outerTab div.active {
+   border-bottom: 40px solid #e63946;
+   border-left: 40px solid transparent;
+   border-right: 40px solid transparent;
+ }
 
-/* Style the tab content */
-.tabs-tabcontent {
-  display: none;
-  height: 500px;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  border: 1px solid #ccc;
-  border-top: none;
-} 
+ /* Style the tab content */
+ .tabs-tabcontent {
+   display: none;
+   height: 500px;
+   overflow-y: hidden;
+   overflow-x: hidden;
+   border: 1px solid #ccc;
+   border-top: none;
+ }
 
-#tabs-tabContainer{
-  display: flex;
-  justify-content: center;
-}
+ #tabs-tabContainer {
+   display: flex;
+   justify-content: center;
+ }
 
-#tabs-tabDiv{
-  width: 100%;
-}
+ #tabs-tabDiv {
+   width: 100%;
+ }
 
-#tabs-regular{
-  background-color: #eca400;
-}
+ #tabs-regular {
+   background-color: #eca400;
+ }

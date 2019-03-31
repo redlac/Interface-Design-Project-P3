@@ -1,18 +1,15 @@
-function hClearUnshippedTable()
-{
+function hClearUnshippedTable() {
 	let holder = document.getElementById("clearLastOne");
 	holder.parentNode.removeChild(holder);
 	//alert(holder);
 }
 
-function hShowPreviousOrder()
-{
+function hShowPreviousOrder() {
 	let holder = document.getElementById("deleteFirstOne");
 	holder.parentNode.removeChild(holder);
 }
 
-function hViewOrder()
-{
+function hViewOrder() {
 	/*
 	alert("#1000, Tomato, x1\n" + 
 		"#1523, Ground Beef, x1\n" +
@@ -23,10 +20,10 @@ function hViewOrder()
 	p.btn.onclick();
 }
 
-function getDate(){
+function getDate() {
 	n = new Date();
-    y = n.getFullYear();
-    m = n.getMonth() + 1;
+	y = n.getFullYear();
+	m = n.getMonth() + 1;
 	d = n.getDate();
-    document.getElementById("currentOrderDate").innerHTML = m + "/" + d + "/" + y;
+	document.getElementById("currentOrderDate").innerHTML = m + "/" + d + "/" + y;
 }

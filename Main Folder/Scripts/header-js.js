@@ -1,4 +1,4 @@
-function getDate(){
+function getDate() {
     n = new Date();
     y = n.getFullYear();
     m = n.getMonth() + 1;

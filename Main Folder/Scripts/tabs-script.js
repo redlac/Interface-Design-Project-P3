@@ -42,4 +42,3 @@ function openScreen(evt, screenName) {
   document.getElementById(screenName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-

@@ -35,7 +35,7 @@ function populateStuff() {
         "<p>" + specialDatabase[0].description + "</p>";
 }
 
-function specialAddToOrder(){
-    document.getElementById("special-confirmation").className="hi";
-    document.getElementById("special-placeOrder").className="hidden";
+function specialAddToOrder() {
+    document.getElementById("special-confirmation").className = "hi";
+    document.getElementById("special-placeOrder").className = "hidden";
 }

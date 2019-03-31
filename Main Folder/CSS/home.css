@@ -7,8 +7,8 @@
     padding: 14px 24px;
 }
 
-.hidden{
-display: none;
+.hidden {
+    display: none;
 }
 
 #homeImage {
@@ -19,7 +19,7 @@ display: none;
     margin: 0 auto;
 }
 
-#greeting{
+#greeting {
     font-size: 200%;
     text-align: center;
 }
@@ -30,15 +30,15 @@ display: none;
     justify-content: center;
 }
 
-#loginBtn{
+#loginBtn {
     height: 25px;
     text-align: center;
-    font-size:16px;
+    font-size: 16px;
     padding: 0;
     margin-bottom: 10px;
 }
 
-#loginInfo{
+#loginInfo {
     display: flex;
     flex-direction: column;
     width: 275px;
@@ -46,7 +46,7 @@ display: none;
     margin: 0 auto;
 }
 
-#loginInfo > div{
+#loginInfo>div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,6 +54,6 @@ display: none;
     margin-bottom: 5px;
 }
 
-#login{
+#login {
     width: 100%;
 }
