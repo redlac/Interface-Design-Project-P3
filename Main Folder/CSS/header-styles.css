@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E6E8E6;
+    margin: 0;
+}
+
+#header-table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+#header-table,
+.header-button {
+    border: 1px solid black;
+}
+
+a:link {
+    color: darkslategrey;
+}
+
+a:visited {
+    color: darkslategrey;
+}
+
+.header-headimage {
+    width: 100%;
+    max-height: 105px;
+}
+
+#header-header {
+    background-color: #ECA400;
+}
+
+#header-headerImage {
+    margin: auto;
+    max-width: 50%;
+    max-height: 70px;
+}
+
+#header-cutoff {
+    position: fixed;
+    top: 7px;
+    right: 10px;
+}

@@ -1,0 +1,123 @@
+/* Remove arrows from number inputs*/
+input[type=number] {
+    -moz-appearance:textfield;
+    width: 2vw;
+    height: 3.1vw;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+#regular-order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECA400;
+}
+
+#regular-view{
+    width: 5vw;
+    margin-bottom: 2vw;
+}
+
+#regular-placeOrder{
+    margin-top: 0.5vw;
+    width: 10vw;
+}
+
+/* Styles for item list view */
+
+.regular-listQty{
+    display: flex;
+    width: 5.2vw;
+}
+
+.regular-listQty > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.regular-listQty > div > input{
+    height: 1.5vw;
+}
+
+#regular-itemList #regular-item-image{ 
+    width: 4vw;
+    height: 3.4vw;
+    border: 1px solid black;
+    margin-right: 0.5vw;
+}
+
+#regular-itemList #regular-item-desc{
+    width: 15vw;
+    border: 1px solid black;
+    margin-right: 0.5vw;
+}
+
+#regular-itemList #regular-item-qty{
+    width: 3vw;
+    margin-right: 0.5vw;
+}
+
+#regular-itemList{
+    height: 12vw;
+    width: 22vw;
+    overflow-y: scroll;
+}
+
+#regular-itemList > div{
+    display: flex;
+    margin-bottom: 0.5vw;
+}
+
+
+/*Styles for item grid view */
+
+.regular-gridRow{
+    display: flex;
+    margin-bottom: 0.5vw;
+}
+
+.regular-gridQty > input{
+    width: 2vw;
+    height: 2vw;
+    text-align: center;
+}
+
+#regular-itemGrid{
+    display: none;
+    flex-direction: column;
+    height: 12vw;
+    width: 24vw;
+    overflow-y: scroll;
+    margin-bottom: 0.5vw;
+}
+
+#regular-itemGrid .regular-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0.5vw;
+}
+
+#regular-itemGrid #regular-item-image{ 
+    width: 6.1vw;
+    height: 6.1vw;
+    border: 1px solid black;
+    margin-bottom: 0.5vw;
+}
+
+#regular-itemGrid #regular-item-desc{
+    width: 6.1vw;
+    border: 1px solid black;
+    margin-bottom: 0.5vw;
+}
+

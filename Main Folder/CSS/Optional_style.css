@@ -1,0 +1,39 @@
+body {
+    text-align: justify;
+}
+
+div {
+    width: 750px;
+    margin: auto;
+}
+
+form,
+tr,
+th,
+td {
+    border: 1px solid black;
+}
+
+#add_item {
+    text-align: center;
+}
+
+#div_output {
+    display: none;
+}
+
+table,
+tr {
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+input#input_number_field {
+    width: 50px;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="Scripts/header-js.js"></script>
+    <script src="Scripts/home.js"></script>
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/header-styles.css">
+    <title>Awesome Soft Serve</title>
+</head>
+
+<body onload="getDate()">
+    <div id="header-header">
+        <div id="header-cutoff">
+            <span>Currentdate <span id="header-currentDate"></span></span><br>
+            <span>Cut Off time: 5:00 p.m.</span>
+        </div>
+        <div id="header-headerImage">
+            <img class="header-headimage" src="images/shutterstock_288575585-1000x300.jpg" alt="gg">
+            <!-- https://sevenfigurepublishing.com/2018/02/23/3-must-see-charts-fast-food-faster-gains/ -->
+        </div><br><br>
+        <table id="header-table">
+            <tr>
+                <th class="header-button">
+                    <a href="home.html">HOME</a>
+                </th>
+                <th class="header-button">
+                    <a href="#">PRODUCTS</a>
+                </th>
+                <th class="header-button">
+                    <a href="index.html">ORDERS</a>
+                </th>
+                <th class="header-button">
+                    <a href="#">OPTIONS</a>
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div id="homeImage">
+        <img src="images/home_image.jpg" alt="">
+    </div>
+    <h1 id="greeting"></h1>
+    <div id="loginInfo">
+        <h3>Login</h3>
+        <div>
+            <label for="username">UserName: </label>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input type="text" name="password" id="password">
+        </div>
+        <input id="loginBtn" type="button" class="btn" id="login" value="Login" onclick="validateLogin()"></input>
+    </div>
+    <form action="">
+        <div id="newOrderBtn">
+            <input type="button" class="btn" id="" value="Start New Order"
+                onclick="window.location.href='index.html'"></input>
+        </div>
+    </form>
+</body>
+
+</html>
