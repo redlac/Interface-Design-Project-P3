@@ -1,0 +1,33 @@
+Restaurant Inventory System Instructions
+
+Here are the instructions to go through the system:
+
+1. Open Home.html file
+2. Try to log in with blank details on the home page. This will result in an error.
+3. Log in successfully with the following credentials:
+        * Username: Kody
+        * Password: CMPS253
+4. Click start new order button. 
+5. Click Regular tab
+6. Scroll through items in list view.
+7. Switch to grid view using the drop-down menu.
+8. Scroll through items.
+9. Add one Qty of each item (6 total).
+10. Click on Special tab.
+11. Type Ash in Name field.
+12. Click search button.
+13. Add 3 Quantity of Ash Brick.
+14. Click Add to Order button.
+15. Click Current Order button on bottom of screen.
+19. Close Current Order modal.
+16. Click Order Options tab.
+17. Click each checkbox on the page.
+18. Click Current Order button on bottom of screen.
+19. Close Current Order modal.
+20. Type 1001 in the Item# field.
+21. Click Add button.
+22. Add 1 Quantity of item.
+23. Click Save button.
+24. Click Order History tab.
+25. Click Cancel Current Order button.
+26. Sort through orders by date by changing Shipping Sent and Shipping Received inputs.
