@@ -3,6 +3,11 @@ var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
+//dtuihnrstiho
+
+var list = document.getElementById("table_current_output");
+
+var currentOrder = document.getElementById("currentOrder");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
