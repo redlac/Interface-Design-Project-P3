@@ -1,6 +1,10 @@
 function hClearUnshippedTable() {
 	let holder = document.getElementById("clearLastOne");
 	holder.parentNode.removeChild(holder);
+	holder = window.parent;
+	holder = holder.list;
+	holder.innerHTML = "";
+	
 	//alert(holder);
 }
 
@@ -16,6 +20,71 @@ function hViewOrder() {
 		"#18536, Beyond Meat, x2\n" +
 		"#25269, Apricot Jam(1800), x1");
 		*/
+		//Creating header row
+		holder = window.parent.list;
+		
+		let row = document.createElement("tr");
+		holder.appendChild(row);
+		
+		let cell = document.createElement("th");
+		cell.innerHTML = "Product ID";
+		
+		row.appendChild(cell);
+		
+		cell = document.createElement("th");
+		cell.innerHTML = "Product";
+		
+		row.appendChild(cell);
+		
+		cell = document.createElement("th");
+		cell.innerHTML = "Description";
+		
+		row.appendChild(cell);
+		
+		cell = document.createElement("th");
+		cell.innerHTML = "Stock";
+		
+		row.appendChild(cell);
+		
+		cell = document.createElement("th");
+		cell.innerHTML = "Quantity";
+		
+		row.appendChild(cell);
+		
+		
+		
+		//Creating first row
+		row = document.createElement("tr");
+		holder.appendChild(row);
+		
+		cell = document.createElement("td");
+		cell.innerHTML = "1005";
+		row.appendChild(cell);
+		
+		cell = document.createElement("td");
+		let imaged = document.createElement("img");
+		imaged.setAttribute("src", "images/chicken_breast_tenderloin.jpg");
+		row.appendChild(cell);
+		cell.appendChild(imaged);
+		
+		cell = document.createElement("td");
+		cell.innerHTML = "Chicken Breast<br>4KG skinless/boneless";
+		row.appendChild(cell);
+		
+		cell = document.createElement("td");
+		cell.innerHTML = "11";
+		row.appendChild(cell);
+		
+		cell = document.createElement("td");
+		cell.innerHTML = "5";
+		row.appendChild(cell);
+		
+		holder = window.parent.currentOrder;
+		holder.innerHTML = "Order for March 12th";
+		
+		
+		
+		
 	var p = window.parent;
 	p.btn.onclick();
 }
