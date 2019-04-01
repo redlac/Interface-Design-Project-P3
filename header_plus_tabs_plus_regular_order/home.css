@@ -1,0 +1,32 @@
+.btn {
+    border-radius: 12px;
+    color: black;
+    background-color: aliceblue;
+    width: 30%;
+    height: 20%;
+    padding: 14px 24px;
+}
+
+.hidden{
+display: none;
+}
+
+#homeImage {
+    display: flex;
+    justify-content: center;
+}
+
+#loginInfo,
+#greeting {
+    margin-left: 40%;
+}
+
+#greeting{
+font-size: 200%;
+}
+
+#newOrderBtn {
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+}

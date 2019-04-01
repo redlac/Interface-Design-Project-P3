@@ -1,0 +1,21 @@
+#myBtn {
+  width: 94%;
+  height: 0px;
+  position: fixed;
+  bottom: 0;
+  cursor: pointer;
+  align-items: center;
+  border-bottom: 40px solid #85CB33;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  text-align: center;
+  font-size: x-large;
+  margin: 0 3%;
+  background-color: #e6e8e6;
+}
+
+#myBtn:hover {
+  border-bottom: 40px solid #e63946;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}

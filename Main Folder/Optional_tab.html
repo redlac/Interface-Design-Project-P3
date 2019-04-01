@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Optional tab</title>
+    <link rel="stylesheet" href="CSS/Optional_style.css">
+
+</head>
+
+<body>
+    <div id="optional_tab_container">
+        <h1>Optional Settings</h1>
+        <div id="box_option_1">
+            <input type="checkbox" name="checkbox1" id="receive_email">Receive email whenever commonly ordered item is
+            low on stock.<br>
+        </div>
+        <div id="box_option_2">
+            <input type="checkbox" name="checkbox2" id="auto_submit_cutoff">Automatically submit ordered at cutoff
+            time.<br>
+        </div>
+        <div id="box_option_3">
+            <input type="checkbox" name="checkbox3" id="auto_add_item" onclick="enabling();">Automatically add item to
+            every order at the start of every newly created order.<br>
+            <form id="add_item" onsubmit="return false">
+                <label for="item_num">Item #</label><br>
+                <input type="text" name="item_#" id="input_item" disabled>
+                <!-- <button id="view_current_order" disabled>View Current Order</button> <br> -->
+                <input type="button" value="Add" name="search_item_button" id="search_item_num" onclick="getData();"
+                    disabled><br>
+            </form>
+        </div>
+        <div id="div_output">
+            <table id="table_output">
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product</th>
+                    <th>Description</th>
+                    <th>Stock</th>
+                    <th>Quantity</th>
+                    <th>Update/Remove</th>
+                </tr>
+            </table>
+            <p id="output_result"></p>
+        </div>
+        <div id="div_save">
+            <button type="save" name="save_button" id="save_option" onclick="saveButton();">Save</button>
+        </div>
+    </div>
+
+    <script src="Scripts/Optional_script.js"></script>
+    <script src="Scripts/database.js"></script>
+    <script src="Scripts/bottom_current.js"></script>
+</body>
+
+</html>

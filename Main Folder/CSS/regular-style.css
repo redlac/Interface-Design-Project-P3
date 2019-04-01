@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+h3 {
+    margin: 11px 2px 0 0;
+}
+
+/* Remove arrows from number inputs*/
+input[type=number] {
+    -moz-appearance: textfield;
+    width: 2vw;
+    height: 3.1vw;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.regular-item-image1 {
+    background-image: url("../images/close-up-delicious-farming-1447297.jpg");
+    background-size: cover;
+}
+
+.regular-item-image2 {
+    background-image: url("../images/bananas-bunch-food-41957.jpg");
+    background-size: cover;
+}
+
+.regular-item-image3 {
+    background-image: url("../images/cucumbers-food-gherkins-8694.jpg");
+    background-size: cover;
+}
+
+.regular-item-image4 {
+    background-image: url("../images/citrus-food-fresh-42059.jpg");
+    background-size: cover;
+}
+
+.regular-item-image5 {
+    background-image: url("../images/blur-close-up-cooking-161533.jpg");
+    background-size: cover;
+}
+
+.regular-item-image6 {
+    background-image: url("../images/chicken_breast_tenderloin.jpg");
+    background-size: cover;
+}
+
+.regular-item-image1,
+.regular-item-image2,
+.regular-item-image3,
+.regular-item-image4,
+.regular-item-image5,
+.regular-item-image6 {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+
+#regular-item-desc1,
+#regular-item-desc2,
+#regular-item-desc3,
+#regular-item-desc4,
+#regular-item-desc5,
+#regular-item-desc6 {
+    width: 10vw;
+}
+
+#regular-item-desc1>p,
+#regular-item-desc2>p,
+#regular-item-desc3>p,
+#regular-item-desc4>p,
+#regular-item-desc5>p,
+#regular-item-desc6>p {
+    margin: 0;
+}
+
+#regular-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6E8E6;
+}
+
+#regular-view {
+    width: 6vw;
+    margin-bottom: 2vw;
+}
+
+#regular-placeOrder {
+    margin-top: 2vw;
+    width: 10vw;
+}
+
+#confirm-popup {
+    display: none;
+    width: 23vw;
+    height: 12vw;
+    text-align: center;
+}
+
+/* Styles for item list view */
+
+.regular-listQty {
+    display: flex;
+    width: 6.5vw;
+}
+
+.regular-listQty>input {
+    height: 40px;
+}
+
+.regular-listQty>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45px;
+}
+
+.regular-listQty>div>input {
+    height: 25px;
+}
+
+#regular-itemList .regular-item-image {
+    width: 4vw;
+    height: 4vw;
+    border: 1px solid black;
+    margin-right: 0.5vw;
+}
+
+#regular-itemList #regular-item-desc {
+    width: 15vw;
+    border: 1px solid black;
+    margin-right: 0.5vw;
+}
+
+#regular-itemList #regular-item-qty {
+    width: 3vw;
+    margin-right: 0.5vw;
+}
+
+#regular-itemList {
+    height: 15vw;
+    width: 27vw;
+    overflow-y: scroll;
+    border: 2px solid gray;
+}
+
+#regular-itemList>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5vw;
+    width:325px;
+}
+
+
+/*Styles for item grid view */
+
+.regular-gridRow {
+    display: flex;
+    margin-bottom: 0.6vw;
+}
+
+.regular-gridRow>.regular-item-image1 {
+    width: 80px;
+    height: 80px;
+}
+
+.regular-gridQty>input {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+#regular-itemGrid {
+    display: none;
+    flex-direction: column;
+    height: 15vw;
+    width: 27vw;
+    overflow-y: scroll;
+    margin-bottom: 0.5vw;
+    border: 2px solid gray;
+}
+
+#regular-itemGrid .regular-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0.5vw;
+    width: 10vw;
+}
+
+#regular-itemGrid .regular-item-image {
+    width: 6.1vw;
+    height: 6.1vw;
+    border: 1px solid black;
+    margin-bottom: 0.5vw;
+}
+
+#regular-itemGrid #regular-item-desc {
+    width: 6.1vw;
+    border: 1px solid black;
+    margin-bottom: 0.5vw;
+}

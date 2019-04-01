@@ -1,0 +1,59 @@
+.btn {
+    border-radius: 12px;
+    color: black;
+    background-color: aliceblue;
+    width: 30%;
+    height: 20%;
+    padding: 14px 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+#homeImage {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#greeting {
+    font-size: 200%;
+    text-align: center;
+}
+
+#newOrderBtn {
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+}
+
+#loginBtn {
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#loginInfo {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#loginInfo>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#login {
+    width: 100%;
+}
