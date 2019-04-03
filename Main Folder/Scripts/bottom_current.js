@@ -5,6 +5,7 @@ var modal = document.getElementById('myModal');
 var btn = document.getElementById("myBtn");
 
 var list = document.getElementById("table_current_output");
+//Eoofsef
 
 var currentOrder = document.getElementById("currentOrder");
 // Get the <span> element that closes the modal
