@@ -101,9 +101,9 @@ function displayResult(length) {
             minus_button.setAttribute("value", "s");
             minus_button.setAttribute("onclick", "minus_quantity();");
 
-            var update_button = document.createElement("button");
-            update_button.innerHTML = "Update";
-            update_button.setAttribute("onclick", `updating_item(${obj.itemID});`);
+            // var update_button = document.createElement("button");
+            // update_button.innerHTML = "Update";
+            // update_button.setAttribute("onclick", `updating_item(${obj.itemID});`);
             var remove_button = document.createElement("button");
             remove_button.innerHTML = "Remove";
             remove_button.setAttribute("onclick", `removing_item(${obj.itemID});`);
@@ -124,12 +124,12 @@ function displayResult(length) {
             item_stock.innerHTML = parseInt(obj.stock).toString();
 
             var item_quantity = row.insertCell(4);
+            item_quantity.append(minus_button);
             item_quantity.append(input_number);
             item_quantity.append(plus_button);
-            item_quantity.append(minus_button);
 
             var update_remove = row.insertCell(5);
-            update_remove.append(update_button);
+            // update_remove.append(update_button);
             update_remove.append(remove_button);
 
             //document.getElementById("output_result").innerHTML = parseInt(obj.itemID).toString() + " at Index: " + myData.indexOf(obj) + " and ranked at positon: " + (myData.indexOf(obj) + 1);

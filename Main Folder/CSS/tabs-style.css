@@ -3,7 +3,7 @@
    display: flex;
    justify-content: center;
    overflow: hidden;
-   background-color: #eca400;
+   background-color:#ec7f37;
  }
 
  /* Style the buttons that are used to open the tab content */
@@ -23,7 +23,7 @@
  }
 
  .tabs-outerTab {
-   background-color: #eca400;
+   background-color: #ec7f37;
    padding: 0;
  }
 
@@ -61,5 +61,5 @@
  }
 
  #tabs-regular {
-   background-color: #eca400;
+   background-color: #ec7f37;
  }

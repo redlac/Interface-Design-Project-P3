@@ -16,6 +16,23 @@ td {
 
 #add_item {
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#box_option_1, #box_option_2, #box_option_3 
+{
+    margin-top: 5px; 
+    margin-bottom: 5px;
+}
+
+.checkBoxOption 
+{
+    width: 17px;
+    height: 17px;
 }
 
 #div_output {
@@ -36,4 +53,16 @@ input#input_number_field {
 img {
     width: 80px;
     height: 80px;
+}
+
+#div_save 
+{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#save_option 
+{
+    margin: auto;
+    width: 10%;
 }
