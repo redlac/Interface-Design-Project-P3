@@ -29,10 +29,8 @@ function specialListPlusQty(itemNumber) {
 
 function populateStuff() {
     document.getElementById("searchOutput").className = "hi";
-    document.getElementById("special-item-image-one").setAttribute("src", specialDatabase[0].picUrl);
-    document.getElementById("special-item-desc-one").innerHTML = "<h4>" + specialDatabase[0].itemName + "</h4>" +
-        "<p>Stock: " + specialDatabase[0].stock + "</p>" +
-        "<p>" + specialDatabase[0].description + "</p>";
+    document.getElementById("special-item-image-one").setAttribute("src", regularDatabase[6].picUrl); document.getElementById("special-item-desc-one").innerHTML = "<h4>" + regularDatabase[6].itemName + "</h4>" + "<p>Stock: " + regularDatabase[6].stock + "</p>" +
+           "<p>" + regularDatabase[6].description + "</p>";
 }
 
 function specialAddToOrder() {
