@@ -178,8 +178,55 @@
         <h2>Order successfully placed.</h2> 
         <h2>Check email for confirmation.</h2>
     </div>
-
 </div>
+    <div id="tabs-special" class="tabs-tabcontent">
+        <div id="special-order">
+            <h1>Search for Item to Add To Order:</h1>
+
+            <div id="special-search-input">
+                <div>
+                    <label for="special-name">Name: </label>
+                    <input type="text" name="" id="special-name">
+                </div>
+                <div>
+                    <label for="special-id">Product Id: </label>
+                    <input type="text" name="" id="special-id">
+                </div>
+                <div>
+                    <label for="special-description">Description: </label>
+                    <input type="text" name="" id="special-description">
+                </div>
+            </div>
+                <div id="special-search-button">
+                    <input type="button" name="" value="Search" onclick="populateStuff()" id="">
+                </div>
+            <div id="searchOutput" class="hidden">
+                <div id="special-itemList">
+                    <div class="special-item-one">
+                        <div id="special-image-tainer">
+                            <img src="" alt="Oh no" id="special-item-image-one">
+                        </div>
+                        <div id="special-item-desc-one">description</div>
+                        <div class="special-listQty">
+                            <input id="special-ListQty1" type="number" value="0" min="0">
+                            <div>
+                                <input type="button" value="+" class="special-QtyPlus" onclick="specialListPlusQty(1);">
+                                <input type="button" value="-" class="special-QtyMinus"
+                                    onclick="specialListMinusQty(1);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center" id="center">
+                    <input id="special-placeOrder" type="submit" value="Add To Order" onclick="specialAddToOrder()">
+                </div>
+
+                <p id="special-confirmation" class="hidden">
+                    Added To Order
+                </p>
+            </div>
+        </div>
+    </div>
 <script src="Scripts/database.js"></script>
 <script src="Scripts/regular-js.js"></script>
 </body>
