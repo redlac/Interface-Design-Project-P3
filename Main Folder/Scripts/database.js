@@ -60,15 +60,51 @@ const regularDatabase = [{
 		'Price': 3.19
 	},
 	{
-	'itemID': 6327,
-	'itemName': "Ash Brick",
-	'description': "Weight:3kg<br>Height:2 inches<br>Length:8 inches",
-	'stock': 26,
-	'quantity': 0,
-	'picUrl': "images/AshBrick.jpg",
-	'Price': 5.99,
-	'reference': "https://www.justdial.com/Vijayawada/SRI-DURGA-Bhavani-Flyash-Bricks-MYLAVARAM-Ibrahimpatnam/0866PX866-X866-180117200512-Z4H6_BZDET/photos"
-},
+		'itemID': 1006,
+		'itemName': "Hamburger Patties",
+		'description': "3 ground chuck patties",
+		'stock': 158,
+		'quantity': 0,
+		'picUrl': "images/hamburger-patty.jpg",
+		'Price': 4.59
+	},
+	{
+		'itemID': 1007,
+		'itemName': "Ground Beef",
+		'description': "5KG lean ground beef",
+		'stock': 5,
+		'quantity': 0,
+		'picUrl': "images/ground-beef.jpg",
+		'Price': 25.99
+	},
+	{
+		'itemID': 5835,
+		'itemName': "Disposable Napkins",
+		'description': "2000 disposable napkins",
+		'stock': 2,
+		'quantity': 0,
+		'picUrl': "images/napkins.jpg",
+		'Price': 34.99
+	},
+	{
+		'itemID': 4738,
+		'itemName': "Drinking Straw",
+		'description': "2000 drinking straws",
+		'stock': 2,
+		'quantity': 0,
+		'picUrl': "images/drinking-straw.jpg",
+		'Price': 19.99
+	},
+	{
+		'itemID': 6327,
+		'itemName': "Ash Brick",
+		'description': "Weight:3kg<br>Height:2 inches<br>Length:8 inches",
+		'stock': 26,
+		'quantity': 0,
+		'picUrl': "images/AshBrick.jpg",
+		'Price': 5.99,
+		'reference': "https://www.justdial.com/Vijayawada/SRI-DURGA-Bhavani-Flyash-Bricks-MYLAVARAM-Ibrahimpatnam/0866PX866-X866-180117200512-Z4H6_BZDET/photos"
+	},
 ];
 
 const historyDatabase = [{
