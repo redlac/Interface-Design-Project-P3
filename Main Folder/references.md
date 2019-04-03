@@ -1,4 +1,8 @@
 # References
+* drinking straw image: https://p.globalsources.com/IMAGES/PDT/BIG/104/B1017647104.jpg
+* napkins image: https://i.ebayimg.com/images/g/sYMAAOxyIAZRwJ1l/s-l300.jpg
+* ground beef image: https://az836796.vo.msecnd.net/media/image/product/en/medium/0021166500000.jpg
+* hamburger image: https://images-na.ssl-images-amazon.com/images/I/91-n4xJoyVL._SX355_.jpg
 * ashbrick image: https://www.justdial.com/Vijayawada/SRI-DURGA-Bhavani-Flyash-Bricks-MYLAVARAM-Ibrahimpatnam/0866PX866-X866-180117200512-Z4H6_BZDET/photos
 * bananas image: https://images.pexels.com/photos/41957/banana-fruit-healthy-yellow-41957.jpeg
 * tomatoes image: https://images.pexels.com/photos/1447297/pexels-photo-1447297.jpeg
