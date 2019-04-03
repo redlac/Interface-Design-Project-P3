@@ -4,7 +4,6 @@ function hClearUnshippedTable() {
 	holder = window.parent;
 	holder = holder.list;
 	holder.innerHTML = "";
-	
 	//alert(holder);
 }
 
@@ -20,7 +19,8 @@ function hViewOrder() {
 		"#18536, Beyond Meat, x2\n" +
 		"#25269, Apricot Jam(1800), x1");
 		*/
-		//Creating header row
+		
+		
 		holder = window.parent.list;
 		
 		let row = document.createElement("tr");
