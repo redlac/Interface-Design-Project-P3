@@ -11,7 +11,8 @@ const regularDatabase = [{
 		'description': "Vine ripe tomatoes.",
 		'stock': 78,
 		'quantity': 0,
-		'picUrl': "images/close-up-delicious-farming-1447297.jpg"
+		'picUrl': "images/close-up-delicious-farming-1447297.jpg",
+		'Price': 0.99
 	},
 	{
 		'itemID': 1001,
@@ -19,7 +20,8 @@ const regularDatabase = [{
 		'description': "Yellow ripened.",
 		'stock': 150,
 		'quantity': 0,
-		'picUrl': "images/bananas-bunch-food-41957.jpg"
+		'picUrl': "images/bananas-bunch-food-41957.jpg",
+		'Price': 0.59
 	},
 	{
 		'itemID': 1002,
@@ -27,7 +29,8 @@ const regularDatabase = [{
 		'description': "Fresh picked.",
 		'stock': 15,
 		'quantity': 0,
-		'picUrl': "images/cucumbers-food-gherkins-8694.jpg"
+		'picUrl': "images/cucumbers-food-gherkins-8694.jpg",
+		'Price': 1.29
 	},
 	{
 		'itemID': 1003,
@@ -35,7 +38,8 @@ const regularDatabase = [{
 		'description': "Navel (seeded).",
 		'stock': 48,
 		'quantity': 0,
-		'picUrl': "images/citrus-food-fresh-42059.jpg"
+		'picUrl': "images/citrus-food-fresh-42059.jpg",
+		'Price': 1.99
 	},
 	{
 		'itemID': 1004,
@@ -43,7 +47,8 @@ const regularDatabase = [{
 		'description': "3KG Spiral",
 		'stock': 6,
 		'quantity': 0,
-		'picUrl': "images/blur-close-up-cooking-161533.jpg"
+		'picUrl': "images/blur-close-up-cooking-161533.jpg",
+		'Price': 2.59
 	},
 	{
 		'itemID': 1005,
@@ -51,19 +56,20 @@ const regularDatabase = [{
 		'description': "4KG skinless/boneless",
 		'stock': 11,
 		'quantity': 0,
-		'picUrl': "images/chicken_breast_tenderloin.jpg"
-	}
-];
-
-const specialDatabase = [{
+		'picUrl': "images/chicken_breast_tenderloin.jpg",
+		'Price': 3.19
+	},
+	{
 	'itemID': 6327,
 	'itemName': "Ash Brick",
 	'description': "Weight:3kg<br>Height:2 inches<br>Length:8 inches",
 	'stock': 26,
 	'quantity': 0,
 	'picUrl': "images/AshBrick.jpg",
+	'Price': 5.99,
 	'reference': "https://www.justdial.com/Vijayawada/SRI-DURGA-Bhavani-Flyash-Bricks-MYLAVARAM-Ibrahimpatnam/0866PX866-X866-180117200512-Z4H6_BZDET/photos"
-}, ];
+},
+];
 
 const historyDatabase = [{
 	'orderID': 213314,
@@ -80,5 +86,6 @@ const autoOrderDatabase = [{
 	'description': "12 x 454G Unwashed",
 	'stock': 37,
 	'quantity': 0,
-	'picUrl': "images/mushroom.jpg"
+	'picUrl': "images/mushroom.jpg",
+	'Price': 18.99,
 }];
