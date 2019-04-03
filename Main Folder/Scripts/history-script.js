@@ -120,6 +120,32 @@ function hViewOrder() {
 		row.appendChild(cell);
 		
 		
+		row = document.createElement("tr");
+		holder.appendChild(row);
+		
+		cell = document.createElement("td");
+		cell.setAttribute("style", "border: none;");
+		cell.innerHTML = "";
+		row.appendChild(cell);
+		
+		cell = document.createElement("td");
+		cell.setAttribute("style", "border: none;");
+		cell.innerHTML = "";
+		row.appendChild(cell);
+		
+		
+		cell = document.createElement("td");
+		cell.setAttribute("style", "border: none;");
+		cell.innerHTML = "";
+		row.appendChild(cell);
+		
+		
+		imaged = document.createElement("input");
+		imaged.setAttribute("type", "button");
+		imaged.setAttribute("value", "Print Selected Order");
+		imaged.setAttribute("id", "centerIt");
+		cell.appendChild(imaged);
+		
 		
 		holder = window.parent.currentOrder;
 		holder.innerHTML = "Order for March 12th";
