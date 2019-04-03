@@ -23,6 +23,8 @@ function hViewOrder() {
 		
 		holder = window.parent.list;
 		
+		holder.innerHTML = "";
+		
 		let row = document.createElement("tr");
 		holder.appendChild(row);
 		
@@ -48,6 +50,11 @@ function hViewOrder() {
 		
 		cell = document.createElement("th");
 		cell.innerHTML = "Quantity";
+		
+		row.appendChild(cell);
+		
+		cell = document.createElement("th");
+		cell.innerHTML = "Price";
 		
 		row.appendChild(cell);
 		
@@ -79,10 +86,43 @@ function hViewOrder() {
 		cell.innerHTML = "5";
 		row.appendChild(cell);
 		
+		cell = document.createElement("td");
+		cell.innerHTML = "3.19";
+		row.appendChild(cell);
+		
+		
+		//Creating second row
+		row = document.createElement("tr");
+		holder.appendChild(row);
+		
+		cell = document.createElement("td");
+		cell.innerHTML = "<strong>TOTAL:</strong>";
+		row.appendChild(cell);
+		
+		cell = document.createElement("td");
+		cell.innerHTML = "";
+		row.appendChild(cell);
+		
+		cell = document.createElement("td");
+		cell.innerHTML = "";
+		row.appendChild(cell);
+		
+		cell = document.createElement("td");
+		cell.innerHTML = "";
+		row.appendChild(cell);
+		
+		cell = document.createElement("td");
+		cell.innerHTML = "5";
+		row.appendChild(cell);
+		
+		cell = document.createElement("td");
+		cell.innerHTML = "15.95";
+		row.appendChild(cell);
+		
+		
+		
 		holder = window.parent.currentOrder;
 		holder.innerHTML = "Order for March 12th";
-		
-		
 		
 		
 	var p = window.parent;

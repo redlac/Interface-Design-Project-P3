@@ -19,6 +19,14 @@
 					<th class="hTableCellStyle">Status</th>
 					<th class="hTableCellStyle">View Order</th>
 				</tr>
+				<tr class="hTableStyle" id="clearLastOne">
+					<td class="hTableCellStyle">34547464</td>
+					<td class="hTableCellStyle">9</td>
+					<td class="hTableCellStyle" id="currentOrderDate">03-20-2019</td>
+					<td class="hTableCellStyle"></td>
+					<td class="hTableCellStyle">Pending</td>
+					<td class="hTableCellStyle"><input type="button" value="View" onClick="hViewOrder();"></td>
+				</tr>
 				<tr class="hTableStyle" id="deleteFirstOne">
 					<td class="hTableCellStyle">34547535</td>
 					<td class="hTableCellStyle">34</td>
@@ -36,14 +44,6 @@
 					<td class="hTableCellStyle"><input type="button" value="View" id="hViewOrder"
 							onClick="hViewOrder();"></td>
 				</tr>
-				<tr class="hTableStyle" id="clearLastOne">
-					<td class="hTableCellStyle">34547464</td>
-					<td class="hTableCellStyle">9</td>
-					<td class="hTableCellStyle" id="currentOrderDate">03-20-2019</td>
-					<td class="hTableCellStyle"></td>
-					<td class="hTableCellStyle">Shipping</td>
-					<td class="hTableCellStyle"><input type="button" value="View" onClick="hViewOrder();"></td>
-				</tr>
 			</table>
 			<div id="hSpaceButtons">
 				<br>
@@ -52,7 +52,7 @@
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="button" value="Print Selected Order">
+				<input type="button" value="Print Current Order">
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<input type="button" value="Cancel Current Order" id="hClearSubmit" onClick="hClearUnshippedTable();">
