@@ -54,30 +54,23 @@ if (document.getElementById("regular-view") !== null) {
 }
 
 if (document.getElementById("regular-itemList") !== null) {
-    console.log("not null");
-    document.getElementById("regular-item-desc1").innerHTML = "<h4>" + regularDatabase[0].itemName + "</h4>" +
-        "<p>Stock: " + regularDatabase[0].stock + "</p>" +
-        "<p>" + regularDatabase[0].description + "</p>";
+    document.getElementById("regular-item-desc1").innerHTML = "<h4>" + regularDatabase[0].itemID + "</h4>" + "<h4>" +  regularDatabase[0].itemName + "</h4>" +"<p>" + 
+    regularDatabase[0].description + "</p>" + "<p>Stock: " + regularDatabase[0].stock + "</p>";
+        
+    document.getElementById("regular-item-desc2").innerHTML = "<h4>" + regularDatabase[1].itemID + "</h4>" + "<h4>" + regularDatabase[1].itemName + "</h4>" +"<p>" + 
+    regularDatabase[1].description + "</p>" + "<p>Stock: " + regularDatabase[1].stock + "</p>";
 
-    document.getElementById("regular-item-desc2").innerHTML = "<h4>" + regularDatabase[1].itemName + "</h4>" +
-        "<p>Stock: " + regularDatabase[1].stock + "</p>" +
-        "<p>" + regularDatabase[1].description + "</p>";
+    document.getElementById("regular-item-desc3").innerHTML = "<h4>" + regularDatabase[2].itemID + "</h4>" + "<h4>" + regularDatabase[2].itemName + "</h4>" +"<p>" + 
+    regularDatabase[2].description + "</p>" + "<p>Stock: " + regularDatabase[2].stock + "</p>";
 
-    document.getElementById("regular-item-desc3").innerHTML = "<h4>" + regularDatabase[2].itemName + "</h4>" +
-        "<p>Stock: " + regularDatabase[2].stock + "</p>" +
-        "<p>" + regularDatabase[2].description + "</p>";
+    document.getElementById("regular-item-desc4").innerHTML = "<h4>" + regularDatabase[3].itemID + "</h4>" + "<h4>" + regularDatabase[3].itemName + "</h4>" +"<p>" + 
+    regularDatabase[3].description + "</p>" + "<p>Stock: " + regularDatabase[3].stock + "</p>";
+    
+    document.getElementById("regular-item-desc5").innerHTML = "<h4>" + regularDatabase[4].itemID + "</h4>" + "<h4>" + regularDatabase[4].itemName + "</h4>" +"<p>" + 
+    regularDatabase[4].description + "</p>" + "<p>Stock: " + regularDatabase[4].stock + "</p>";
 
-    document.getElementById("regular-item-desc4").innerHTML = "<h4>" + regularDatabase[3].itemName + "</h4>" +
-        "<p>Stock: " + regularDatabase[3].stock + "</p>" +
-        "<p>" + regularDatabase[3].description + "</p>";
-
-    document.getElementById("regular-item-desc5").innerHTML = "<h4>" + regularDatabase[4].itemName + "</h4>" +
-        "<p>Stock: " + regularDatabase[4].stock + "</p>" +
-        "<p>" + regularDatabase[4].description + "</p>";
-
-    document.getElementById("regular-item-desc6").innerHTML = "<h4>" + regularDatabase[5].itemName + "</h4>" +
-        "<p>Stock: " + regularDatabase[5].stock + "</p>" +
-        "<p>" + regularDatabase[5].description + "</p>";
+    document.getElementById("regular-item-desc6").innerHTML = "<h4>" + regularDatabase[5].itemID + "</h4>" + "<h4>" + regularDatabase[5].itemName + "</h4>" +"<p>" + 
+    regularDatabase[5].description + "</p>" + "<p>Stock: " + regularDatabase[5].stock + "</p>";
 
     document.getElementById("regular-grid-item-desc1").innerHTML = "<h4>" + regularDatabase[0].itemName + "</h4>";
     document.getElementById("regular-grid-item-desc2").innerHTML = "<h4>" + regularDatabase[1].itemName + "</h4>";
@@ -92,6 +85,13 @@ if (document.getElementById("regular-itemList") !== null) {
     document.getElementById("regular-stock4").innerHTML = "Stock: " + regularDatabase[3].stock;
     document.getElementById("regular-stock5").innerHTML = "Stock: " + regularDatabase[4].stock;
     document.getElementById("regular-stock6").innerHTML = "Stock: " + regularDatabase[5].stock;
+    
+    document.getElementById("regular-price1").innerHTML = "Price: $" + regularDatabase[0].Price;
+    document.getElementById("regular-price2").innerHTML = "Price: $" + regularDatabase[1].Price;
+    document.getElementById("regular-price3").innerHTML = "Price: $" + regularDatabase[2].Price;
+    document.getElementById("regular-price4").innerHTML = "Price: $" + regularDatabase[3].Price;
+    document.getElementById("regular-price5").innerHTML = "Price: $" + regularDatabase[4].Price;
+    document.getElementById("regular-price6").innerHTML = "Price: $" + regularDatabase[5].Price;
 }else{console.log("is null");}
 
 function placeOrder() {

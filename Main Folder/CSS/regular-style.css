@@ -29,6 +29,12 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
+td{
+    text-align:center;
+    font-weight: bold;
+    border: 1px solid grey;
+}
+
 .regular-item-image1 {
     background-image: url("../images/close-up-delicious-farming-1447297.jpg");
     background-size: cover;
@@ -65,8 +71,8 @@ input[type=number]::-webkit-outer-spin-button {
 .regular-item-image4,
 .regular-item-image5,
 .regular-item-image6 {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin: 5px;
 }
 
@@ -76,7 +82,9 @@ input[type=number]::-webkit-outer-spin-button {
 #regular-item-desc4,
 #regular-item-desc5,
 #regular-item-desc6 {
-    width: 10vw;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
 }
 
 #regular-item-desc1>p,
@@ -88,13 +96,29 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
+#regular-item-desc1 > *{
+    border: 1px solid grey;
+    padding: 4%;
+    margin: 1px;
+}
+
+#regular-price1,
+#regular-price2,
+#regular-price3,
+#regular-price4,
+#regular-price5,
+#regular-price6{
+    padding:2%;
+    border: 1px solid grey;
+}
+
 #regular-order {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #E6E8E6;
-    width: 80%;
+    width: 90%;
 }
 
 #regular-view {
@@ -156,7 +180,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 #regular-itemList {
     height: 15vw;
-    width: 27vw;
+    width: 90%;
     overflow-y: scroll;
     border: 2px solid gray;
 }
@@ -166,7 +190,7 @@ input[type=number]::-webkit-outer-spin-button {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.5vw;
-    width:325px;
+    width: 95%;
 }
 
 
@@ -192,7 +216,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: none;
     flex-direction: column;
     height: 15vw;
-    width: 27vw;
+    width: 90%; 
     overflow-y: scroll;
     margin-bottom: 0.5vw;
     border: 2px solid gray;

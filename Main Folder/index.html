@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" href="CSS/bottom_current.css">
     <link rel="stylesheet" href="CSS/index-style.css">
+    <!-- Keep this script tag here to enable loading the regular order page when 'Create New Order' button is clicked-->
+    <script src="scripts/tabs-script.js"></script>
 
 </head>
 
@@ -35,7 +37,7 @@
                     <a href="#">PRODUCTS</a>
                 </th>
                 <th class="header-button">
-                    <a href="#" onclick="openScreen(event, 'tabs-Regular'); setTabActive();">ORDERS</a>
+                    <a href="#" onclick="fireClickEvent();">ORDERS</a>
                 </th>
                 <th class="header-button">
                     <a href="#">SYSTEM OPTIONS</a>
@@ -177,7 +179,6 @@
 
     <script src="scripts/database.js"></script>
     <script src="scripts/header-js.js"></script>
-    <script src="scripts/tabs-script.js"></script>
     <script src="scripts/regular-js.js"></script>
     <script src="Scripts/Optional_script.js"></script>
     <script src="Scripts/bottom_current.js"></script>

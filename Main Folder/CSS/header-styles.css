@@ -28,7 +28,12 @@ th.header-button
 .header-button a:link {
     text-decoration: none;
     color: darkslategrey;
-}
+}  
+
+.header-button a{
+    text-decoration: none;
+    color: darkslategrey;
+}  
 
 .header-button a:visited {
     text-decoration: none;
