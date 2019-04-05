@@ -1,3 +1,5 @@
+document.getElementById("order-sent").style.display = "none";
+
 /**
  * Functions for setting the quantity on items when the plus and minus buttons are clicked.
  */
@@ -42,11 +44,13 @@ if (document.getElementById("regular-view") !== null) {
     document.getElementById("regular-view").onchange = function () {
         let viewType = document.getElementById("regular-view").value;
         if (viewType == "Grid View") {
+            document.getElementById("regular-itemList-header").style.display = "none";
             document.getElementById("regular-itemList").style.display = "none";
             document.getElementById("regular-itemGrid").style.display = "flex";
         }
 
         if (viewType == "List View") {
+            document.getElementById("regular-itemList-header").style.display = "block";
             document.getElementById("regular-itemList").style.display = "block";
             document.getElementById("regular-itemGrid").style.display = "none";
         }
@@ -92,9 +96,27 @@ if (document.getElementById("regular-itemList") !== null) {
     document.getElementById("regular-price4").innerHTML = "Price: $" + regularDatabase[3].Price;
     document.getElementById("regular-price5").innerHTML = "Price: $" + regularDatabase[4].Price;
     document.getElementById("regular-price6").innerHTML = "Price: $" + regularDatabase[5].Price;
+    
+    document.getElementById("grid-price1").innerHTML = "Price: $" + regularDatabase[0].Price;
+    document.getElementById("grid-price2").innerHTML = "Price: $" + regularDatabase[1].Price;
+    document.getElementById("grid-price3").innerHTML = "Price: $" + regularDatabase[2].Price;
+    document.getElementById("grid-price4").innerHTML = "Price: $" + regularDatabase[3].Price;
+    document.getElementById("grid-price5").innerHTML = "Price: $" + regularDatabase[4].Price;
+    document.getElementById("grid-price6").innerHTML = "Price: $" + regularDatabase[5].Price;
 }else{console.log("is null");}
 
 function placeOrder() {
     document.getElementById("regular-placeOrder").style.display = "none";
     document.getElementById("confirm-popup").style.display = "block";
+}
+
+function sendOrder(){
+    document.getElementById("confirm-popup").style.display = "none";
+    document.getElementById("order-sent").style.display = "block";
+}
+
+function cancelOrder(){
+    document.getElementById("confirm-popup").style.display = "none";
+    document.getElementById("order-sent").style.display = "none";
+    document.getElementById("regular-placeOrder").style.display = "block";
 }

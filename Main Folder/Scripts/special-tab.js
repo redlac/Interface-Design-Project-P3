@@ -29,7 +29,7 @@ function specialListPlusQty(itemNumber) {
 
 function populateStuff() {
     document.getElementById("searchOutput").className = "hi";
-    document.getElementById("special-item-image-one").setAttribute("src", regularDatabase[6].picUrl); document.getElementById("special-item-desc-one").innerHTML = "<h4>" + regularDatabase[6].itemName + "</h4>" + "<p>Stock: " + regularDatabase[6].stock + "</p>" +
+    document.getElementById("special-item-image-one").setAttribute("src", regularDatabase[6].picUrl); document.getElementById("special-item-desc-one").innerHTML = "<h4>" + regularDatabase[6].itemName + "</h4>" + "<p>Product ID: " + regularDatabase[6].itemID + "</p>" + "<p>Price: $" + regularDatabase[6].Price + "</p>" + "<p>Stock: " + regularDatabase[6].stock + "</p>" +
            "<p>" + regularDatabase[6].description + "</p>";
 }
 

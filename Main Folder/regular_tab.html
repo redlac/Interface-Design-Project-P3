@@ -10,7 +10,7 @@
 </head>
 <body>
 <div id="regular-order">
-    <h1>Order Select</h1>
+    <h1>Create a New Order</h1>
     <label for="regular-view">
         List by:
         <select id="regular-view">
@@ -117,6 +117,9 @@
                 <div id="regular-stock1">
                     Stock: 0
                 </div>
+                <div id="grid-price1">
+                    Price: 0
+                </div>
             </div>
             <div class="regular-item">
                 <div id="regular-grid-item-desc2">description</div>
@@ -128,6 +131,9 @@
                 </div>
                 <div id="regular-stock2">
                     Stock: 0
+                </div>
+                <div id="grid-price2">
+                    Price: 0
                 </div>
             </div>
             <div class="regular-item">
@@ -141,6 +147,9 @@
                 <div id="regular-stock3">
                     Stock: 0
                 </div>
+                <div id="grid-price3">
+                    Price: 0
+                </div>
             </div>
             <div class="regular-item">
                 <div id="regular-grid-item-desc4">description</div>
@@ -152,6 +161,9 @@
                 </div>
                 <div id="regular-stock4">
                     Stock: 0
+                </div>
+                <div id="grid-price4">
+                    Price: 0
                 </div>
             </div>
             <div class="regular-item">
@@ -165,6 +177,9 @@
                 <div id="regular-stock5">
                     Stock: 0
                 </div>
+                <div id="grid-price5">
+                    Price: 0
+                </div>
             </div>
             <div class="regular-item">
                 <div id="regular-grid-item-desc6">description</div>
@@ -177,13 +192,20 @@
                 <div id="regular-stock6">
                     Stock: 0
                 </div>
+                <div id="grid-price6">
+                    Price: 0
+                </div>
             </div>
         </div>
     </div>
     <input id="regular-placeOrder" type="submit" value="Place Order" onclick="placeOrder();">
     <div id="confirm-popup">
-        <h2>Order successfully placed.</h2> 
-        <h2>Check email for confirmation.</h2>
+        <p><b>Are you sure you want to send the order?</b></p>
+        <button onclick="sendOrder();">Yes</button>
+        <button onclick="cancelOrder();">No</button>
+    </div>
+    <div id="order-sent">
+        <h2>Order successfully placed. Check email for confirmation.</h2> 
     </div>
 </div>
     <div id="tabs-special" class="tabs-tabcontent">

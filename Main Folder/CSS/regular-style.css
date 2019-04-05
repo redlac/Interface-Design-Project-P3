@@ -95,9 +95,10 @@ td{
     border: 1px solid grey;
     border-radius: 5px;
     margin: 0 0px 0 0px;
-    width: 190px;
+    width: 130px;
+    height:20px;
     text-align: center;
-    padding: 30px 0px;
+    padding: 40px 0px;
 }
 
 #regular-price1,
@@ -110,38 +111,40 @@ td{
     border-radius: 5px;
     width: 193px;
     text-align: center;
-    padding: 30px 0px;
+    height: 20px;
+    padding: 40px 0;
+    
 }
 
 #regular-itemList-header{
-    width: 90%; 
+    width: 100%; 
 }
 
 #regular-itemList-header > *:nth-child(1) {
-    margin-left: 120px;
+    margin-left: 140px;
     font-weight: bold;
     font-size: 1.1em;
 }
 
 #regular-itemList-header > *:nth-child(2) {
-    margin-left: 90px;
+    margin-left: 30px;
     font-weight: bold;
     font-size: 1.1em;
 }
 
 #regular-itemList-header > *:nth-child(3) {
-    margin-left: 90px;
+    margin-left: 30px;
     font-weight: bold;
     font-size: 1.1em;
 }
 #regular-itemList-header > *:nth-child(4) {
-    margin-left: 120px;
+    margin-left: 60px;
     font-weight: bold;
     font-size: 1.1em;
 }
 
 #regular-itemList-header > *:nth-child(5) {
-    margin-left: 130px;
+    margin-left: 90px;
     font-weight: bold;
     font-size: 1.1em;
 }
@@ -157,7 +160,11 @@ td{
     justify-content: center;
     align-items: center;
     background-color: #E6E8E6;
-    width: 74%;
+    width: 1000px;
+}
+
+#regular-order > h1{
+    margin-top: 0px;
 }
 
 #regular-view {
@@ -166,7 +173,7 @@ td{
 }
 
 #regular-placeOrder {
-    margin-top: 2vw;
+    margin-top: 10px;
     width: 10vw;
 }
 
@@ -188,7 +195,7 @@ td{
     justify-content: end;
     border: 1px solid grey;
     border-radius: 5px;
-    padding: 10px 25px;
+    padding: 25px 25px;
     width: 75px;
 }
 
