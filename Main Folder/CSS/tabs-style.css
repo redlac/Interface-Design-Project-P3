@@ -63,3 +63,13 @@
  #tabs-regular {
    background-color: #ec7f37;
  }
+
+ #tabs-special{
+   padding-left: 150px;
+   border: 1px solid grey;
+   border-radius: 5px;
+   width: 25%;
+   margin-right: 20px;
+   margin-top:20px;
+   
+ }

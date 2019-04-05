@@ -71,8 +71,8 @@ td{
 .regular-item-image4,
 .regular-item-image5,
 .regular-item-image6 {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin: 5px;
 }
 
@@ -84,22 +84,20 @@ td{
 #regular-item-desc6 {
     display: flex;
     width: 80%;
-    justify-content: space-between;
 }
 
-#regular-item-desc1>p,
-#regular-item-desc2>p,
-#regular-item-desc3>p,
-#regular-item-desc4>p,
-#regular-item-desc5>p,
-#regular-item-desc6>p {
-    margin: 0;
-}
-
-#regular-item-desc1 > *{
+#regular-item-desc1 > *,
+#regular-item-desc2 > *,
+#regular-item-desc3 > *,
+#regular-item-desc4 > *,
+#regular-item-desc5 > *,
+#regular-item-desc6 > *{
     border: 1px solid grey;
-    padding: 4%;
-    margin: 1px;
+    border-radius: 5px;
+    margin: 0 0px 0 0px;
+    width: 190px;
+    text-align: center;
+    padding: 30px 0px;
 }
 
 #regular-price1,
@@ -108,8 +106,49 @@ td{
 #regular-price4,
 #regular-price5,
 #regular-price6{
-    padding:2%;
     border: 1px solid grey;
+    border-radius: 5px;
+    width: 193px;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+#regular-itemList-header{
+    width: 90%; 
+}
+
+#regular-itemList-header > *:nth-child(1) {
+    margin-left: 120px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#regular-itemList-header > *:nth-child(2) {
+    margin-left: 90px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#regular-itemList-header > *:nth-child(3) {
+    margin-left: 90px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+#regular-itemList-header > *:nth-child(4) {
+    margin-left: 120px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#regular-itemList-header > *:nth-child(5) {
+    margin-left: 130px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+#regular-itemList-header > *:nth-child(6) {
+    margin-left: 70px;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 #regular-order {
@@ -118,7 +157,7 @@ td{
     justify-content: center;
     align-items: center;
     background-color: #E6E8E6;
-    width: 90%;
+    width: 74%;
 }
 
 #regular-view {
@@ -138,11 +177,19 @@ td{
     text-align: center;
 }
 
+#confirm-popup > *{
+    margin: 0;
+}
+
 /* Styles for item list view */
 
 .regular-listQty {
     display: flex;
-    width: 6.5vw;
+    justify-content: end;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px 25px;
+    width: 75px;
 }
 
 .regular-listQty>input {
@@ -190,7 +237,7 @@ td{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.5vw;
-    width: 95%;
+    width: 99%;
 }
 
 

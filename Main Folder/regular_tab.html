@@ -3,13 +3,14 @@
 <head>
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 <link rel="stylesheet" href="CSS/regular-style.css">
+<link rel="stylesheet" href="CSS/special-tab.css">
 <title>
     Awesome Soft Serve
 </title>
 </head>
 <body>
 <div id="regular-order">
-    <h1>Regular Order</h1>
+    <h1>Order Select</h1>
     <label for="regular-view">
         List by:
         <select id="regular-view">
@@ -21,32 +22,20 @@
             </option>
         </select>
     </label>
-    <!--
-    <table id="regular-itemList-header">
-        <tbody><tr><td style="width: 100px;/*! margin: 0; */">Product ID</td>
-        <td style="width: 120px;">Product Name</td>
-        <td style="width: 170px;">Description</td>
-        <td style="width: 90px;/*! padding-left: 1; */">Stock</td>
-        <td style="width: 150px;">Price</td>
-        <td style="width: 50px;/*! margin-right: 500px; *//*! padding-right: 50px; */">Quantity</td>
-    </tr></tbody>
-    </table>
-    --> 
+    <div id="regular-itemList-header">
+        <span style="width: 100px;/*! margin: 0; */">Product ID</span>
+        <span style="width: 120px;">Product Name</span>
+        <span style="width: 170px;">Description</span>
+        <span style="width: 90px;/*! padding-left: 1; */">Stock</span>
+        <span style="width: 150px;">Price</span>
+        <span style="width: 50px;/*! margin-right: 500px; *//*! padding-right: 50px; */">Quantity</span>
+    </div>
     <div id="regular-itemList">
-        <div class="regular-item">
-            <div class="regular-item-image0"></div>
-            <div id="regular-item-desc0">Product ID &nbsp Product Name &nbsp Description &nbsp Stock</div>
-            <div id="regular-price0"> Price:</div>
-            <div class="regular-listQty">
-                Qty
-            </div>
-        </div>
         <div class="regular-item">
             <div class="regular-item-image1"></div>
             <div id="regular-item-desc1">description</div>
             <div id="regular-price1"> Price:</div>
             <div class="regular-listQty">
-                    <h3>Qty</h3>
                 <input id="regular-ListQty1" type="number" value="0" min="0">
                 <div>
                     <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(1);"> 
@@ -59,7 +48,6 @@
             <div id="regular-item-desc2">description</div>
             <div id="regular-price2"> Price:</div>
             <div class="regular-listQty">
-                <h3>Qty</h3>
                 <input id="regular-ListQty2" type="number" value="0" min="0">
                 <div>
                     <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(2);"> 
@@ -72,7 +60,6 @@
             <div id="regular-item-desc3">description</div>
             <div id="regular-price3"> Price:</div>
             <div class="regular-listQty">
-                <h3>Qty</h3>
                 <input id="regular-ListQty3" type="number" value="0" min="0">
                 <div>
                     <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(3);"> 
@@ -85,7 +72,6 @@
             <div id="regular-item-desc4">description</div>
             <div id="regular-price4"> Price:</div>
             <div class="regular-listQty">
-                <h3>Qty</h3>
                 <input id="regular-ListQty4" type="number" value="0" min="0">
                 <div>
                     <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(4);"> 
@@ -98,7 +84,6 @@
             <div id="regular-item-desc5">description</div>
             <div id="regular-price5"> Price:</div>
             <div class="regular-listQty">
-                <h3>Qty</h3>
                 <input id="regular-ListQty5" type="number" value="0" min="0">
                 <div>
                     <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(5);"> 
@@ -111,7 +96,6 @@
             <div id="regular-item-desc6">description</div>
             <div id="regular-price6"> Price:</div>
             <div class="regular-listQty">
-                <h3>Qty</h3>
                 <input id="regular-ListQty6" type="number" value="0" min="0">
                 <div>
                     <input type="button" value="+" class="regular-QtyPlus" onclick="regularListPlusQty(6);"> 
@@ -204,20 +188,12 @@
 </div>
     <div id="tabs-special" class="tabs-tabcontent">
         <div id="special-order">
-            <h1>Search for Item to Add To Order:</h1>
+            <h1>Search for Product:</h1>
 
             <div id="special-search-input">
                 <div>
-                    <label for="special-name">Name: </label>
-                    <input type="text" name="" id="special-name">
-                </div>
-                <div>
-                    <label for="special-id">Product Id: </label>
-                    <input type="text" name="" id="special-id">
-                </div>
-                <div>
-                    <label for="special-description">Description: </label>
-                    <input type="text" name="" id="special-description">
+                    <label for="special-search">Enter Search Term: </label>
+                    <input type="text" name="" id="special-search">
                 </div>
             </div>
                 <div id="special-search-button">
@@ -252,5 +228,6 @@
     </div>
 <script src="Scripts/database.js"></script>
 <script src="Scripts/regular-js.js"></script>
+<script src="Scripts/special-tab.js"></script>
 </body>
 </html>
