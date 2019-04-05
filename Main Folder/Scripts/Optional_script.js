@@ -46,23 +46,27 @@ function removing_item(id) {
     myIDs.splice((row_num - 1), 1);
 }
 
-function plus_quantity() {
+function plus_quantity(name) {
     console.log("check 1");
-    var current_value = document.getElementById("input_number_field").value;
+    var str = name;
+    console.log("check 1", name, str);
+    var current_value = document.getElementById(str).value;
     var updated_value = Number(current_value) + 1;
     console.log("check 1", current_value, updated_value);
-    document.getElementById("input_number_field").value = updated_value;
+    document.getElementById(val).value = updated_value;
 }
 
-function minus_quantity() {
-    console.log("check 2");
-    var current_value = document.getElementById("input_number_field").value;
+function minus_quantity(val) {
+    
+    var str = val.toString();
+    console.log("check 2", val, str);
+    var current_value = document.getElementById(str).value;
     var updated_value = Number(current_value) - 1;
     if (updated_value < 0) {
         updated_value = 0;
     }
     console.log("check 3", current_value, updated_value);
-    document.getElementById("input_number_field").value = updated_value;
+    document.getElementById(val).value = updated_value;
 }
 
 function displayResult(length) {
@@ -82,24 +86,26 @@ function displayResult(length) {
         console.log(flag);
         if (obj.itemID == parseInt(item_num) && flag) {
             myIDs.push(obj.itemID);
-
+            var product_name = obj.itemName;
+            console.log(product_name);
             var image = document.createElement("img");
             image.setAttribute("src", obj.picUrl);
 
             var input_number = document.createElement("input");
             input_number.setAttribute("type", "text");
-            input_number.setAttribute("id", "input_number_field");
+            input_number.setAttribute("id", obj.itemName.toString());
+            input_number.setAttribute("class", "input_number_field");
             //input_number.setAttribute("value", "0");
 
             var plus_button = document.createElement("button");
             plus_button.innerHTML = "+";
             plus_button.setAttribute("id", "plus_button");
             plus_button.setAttribute("value", "+");
-            plus_button.setAttribute("onclick", "plus_quantity();");
+            plus_button.setAttribute("onclick", `plus_quantity(${product_name});`);
             var minus_button = document.createElement("button");
             minus_button.innerHTML = "-";
             minus_button.setAttribute("value", "s");
-            minus_button.setAttribute("onclick", "minus_quantity();");
+            minus_button.setAttribute("onclick", `minus_quantity(${product_name});`);
 
             // var update_button = document.createElement("button");
             // update_button.innerHTML = "Update";
