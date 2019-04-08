@@ -101,7 +101,7 @@ function adding_item(id) {
     var list_output = document.getElementById("order_list_result");
     for (var i = 0; i < myData.length; i++) {
         if (myData[i].itemID == id) {
-            myListData.push(myData[i]);
+            // myListData.push(myData[i]);
             console.log(myData[i]);
             var id_item = id;
             var name_item = myData[i].itemName;
