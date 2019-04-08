@@ -5,6 +5,7 @@ body {
 div {
     width: 750px;
     margin: auto;
+/*    border: 1px solid red;*/
 }
 
 form,
@@ -46,7 +47,7 @@ tr {
     text-align: center;
 }
 
-input#input_number_field {
+input.input_number_field {
     width: 50px;
 }
 
@@ -65,4 +66,27 @@ img {
 {
     margin: auto;
     width: 10%;
+}
+
+#added_list 
+{
+    float: right;
+    position: relative;
+    width: 200px;
+}
+
+#optional_tab_container 
+{
+	float: left;
+	margin-left: 100px;
+	border-right: 1px solid black;
+}
+
+#added_list 
+{
+	float: right;
+	width: 300px;
+	margin-right: 100px;
+	height: 300px;
+	padding: 10px;
 }

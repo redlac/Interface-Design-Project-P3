@@ -25,11 +25,16 @@
             <input type="checkbox" name="checkbox3"  class="checkBoxOption" id="auto_add_item" onclick="enabling();">Automatically add item to
             every order at the start of every newly created order.<br>
             <form id="add_item" onsubmit="return false">
-                <label for="item_num">Product ID: </label>
-                <input type="text" name="item_#" id="input_item" placeholder="Auto Add Item" disabled>
+                <label for="label_search_field">Search by: </label>
+                <select name="searchingBy" id="search_by_selection">
+                        <option value="1">Product ID</option>
+                        <option value="2">Product Name</option>
+                        <option value="3">Description</option>
+                    </select>
+                <input type="text" name="item_#" id="input_item" onkeyup="getData();" placeholder="Search" disabled>
                 <!-- <button id="view_current_order" disabled>View Current Order</button> <br> -->
-                <input type="button" value="Add" name="search_item_button" id="search_item_num" onclick="getData();"
-                    disabled><br>
+                <!-- <input type="button" value="Add" name="search_item_button" id="search_item_num" onclick="getData();" disabled> -->
+                    <br>
             </form>
         </div>
         <div id="div_output">
@@ -40,7 +45,7 @@
                     <th>Description</th>
                     <th>Stock</th>
                     <th>Quantity</th>
-                    <th>Update/Remove</th>
+                    <th>Add/Remove</th>
                 </tr>
             </table>
             <p id="output_result"></p>
@@ -49,7 +54,10 @@
             <button type="save" name="save_button" id="save_option" onclick="saveButton();">Save</button>
         </div>
     </div>
-
+    <div id="added_list">
+      <p>List of Added Item:</p>
+      <ol id="order_list_result"></ol>
+    </div>
     <script src="Scripts/Optional_script.js"></script>
     <script src="Scripts/database.js"></script>
     <script src="Scripts/bottom_current.js"></script>
