@@ -31,10 +31,10 @@
                         <option value="2">Product Name</option>
                         <option value="3">Description</option>
                     </select>
-                <input type="text" name="item_#" id="input_item" placeholder="Search" disabled>
+                <input type="text" name="item_#" id="input_item" onkeyup="getData();" placeholder="Search" disabled>
                 <!-- <button id="view_current_order" disabled>View Current Order</button> <br> -->
-                <input type="button" value="Add" name="search_item_button" id="search_item_num" onclick="getData();"
-                    disabled><br>
+                <!-- <input type="button" value="Add" name="search_item_button" id="search_item_num" onclick="getData();" disabled> -->
+                    <br>
             </form>
         </div>
         <div id="div_output">
@@ -45,7 +45,7 @@
                     <th>Description</th>
                     <th>Stock</th>
                     <th>Quantity</th>
-                    <th>Update/Remove</th>
+                    <th>Add/Remove</th>
                 </tr>
             </table>
             <p id="output_result"></p>
@@ -56,6 +56,7 @@
     </div>
     <div id="added_list">
       <p>List of Added Item:</p>
+      <ol id="order_list_result"></ol>
     </div>
     <script src="Scripts/Optional_script.js"></script>
     <script src="Scripts/database.js"></script>
