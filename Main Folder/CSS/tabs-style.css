@@ -62,6 +62,9 @@
 
  #tabs-regular {
    background-color: #ec7f37;
+   height:450px;
+   overflow-y: hidden;
+   overflow-x: hidden;
  }
 
  #tabs-special{
@@ -71,4 +74,5 @@
    width: 25%; 
    margin-right: 20px;
    margin-top:20px;
+   overflow-y: hidden;
  }

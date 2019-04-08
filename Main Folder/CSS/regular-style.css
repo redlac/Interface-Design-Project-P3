@@ -164,7 +164,7 @@ td{
 }
 
 #regular-order > h1{
-    margin-top: 0px;
+    margin-top: 15px;
 }
 
 #regular-view {
@@ -179,13 +179,14 @@ td{
 
 #confirm-popup {
     display: none;
-    width: 23vw;
-    height: 12vw;
     text-align: center;
+    overflow: hidden;
+    margin:0;
 }
 
 #confirm-popup > *{
     margin: 0;
+    overflow: hidden;
 }
 
 /* Styles for item list view */
@@ -295,4 +296,10 @@ td{
     width: 6.1vw;
     border: 1px solid black;
     margin-bottom: 0.5vw;
+}
+
+#order-sent{
+    display: block;
+    height: 20px;
+    margin-top: -10px;  
 }
