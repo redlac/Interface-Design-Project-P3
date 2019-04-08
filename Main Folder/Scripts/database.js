@@ -78,15 +78,6 @@ const regularDatabase = [{
 		'Price': 25.99
 	},
 	{
-		'itemID': 5835,
-		'itemName': "Disposable Napkins",
-		'description': "2000 disposable napkins",
-		'stock': 2,
-		'quantity': 0,
-		'picUrl': "images/napkins.jpg",
-		'Price': 34.99
-	},
-	{
 		'itemID': 4738,
 		'itemName': "Drinking Straw",
 		'description': "2000 drinking straws",
@@ -94,6 +85,15 @@ const regularDatabase = [{
 		'quantity': 0,
 		'picUrl': "images/drinking-straw.jpg",
 		'Price': 19.99
+	},
+	{
+		'itemID': 5835,
+		'itemName': "Disposable Napkins",
+		'description': "2000 disposable napkins",
+		'stock': 2,
+		'quantity': 0,
+		'picUrl': "images/napkins.jpg",
+		'Price': 34.99
 	},
 	{
 		'itemID': 6327,

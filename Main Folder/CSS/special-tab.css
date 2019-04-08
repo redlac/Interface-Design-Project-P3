@@ -108,9 +108,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #confirm-popup {
-    display: none;
+    display: block;
+    visibility: hidden;
     width: 23vw;
-    height: 12vw;
+    height: 50px;
     text-align: center;
 }
 
@@ -223,6 +224,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 200%;
     margin: 0 auto;
     text-align: center;
+    height: 60%;
 }
 
 #special-search-input{

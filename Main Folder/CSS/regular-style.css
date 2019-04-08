@@ -4,7 +4,6 @@ body {
     justify-content: space-around;
 }
 
-
 h4 {
     margin: 0;
 }
@@ -65,12 +64,39 @@ td{
     background-size: cover;
 }
 
+.regular-item-image7 {
+    background-image: url("../images/hamburger-patty.jpg");
+    background-size: cover;
+}
+
+.regular-item-image8 {
+    background-image: url("../images/ground-beef.jpg");
+    background-size: cover;
+}
+
+.regular-item-image9 {
+    background-image: url("../images/drinking-straw.jpg");
+    background-size: cover;
+}
+.regular-item-image10 {
+    background-image: url("../images/napkins.jpg");
+    background-size: cover;
+}
+.regular-item-image11 {
+    background-image: url("../images/AshBrick.jpg");
+    background-size: cover;
+}
 .regular-item-image1,
 .regular-item-image2,
 .regular-item-image3,
 .regular-item-image4,
 .regular-item-image5,
-.regular-item-image6 {
+.regular-item-image6,
+.regular-item-image7,
+.regular-item-image8,
+.regular-item-image9,
+.regular-item-image10,
+.regular-item-image11{
     width: 80px;
     height: 80px;
     margin: 5px;
@@ -81,7 +107,12 @@ td{
 #regular-item-desc3,
 #regular-item-desc4,
 #regular-item-desc5,
-#regular-item-desc6 {
+#regular-item-desc6,
+#regular-item-desc7,
+#regular-item-desc8,
+#regular-item-desc9,  
+#regular-item-desc10,
+#regular-item-desc11{
     display: flex;
     width: 80%;
 }
@@ -91,7 +122,12 @@ td{
 #regular-item-desc3 > *,
 #regular-item-desc4 > *,
 #regular-item-desc5 > *,
-#regular-item-desc6 > *{
+#regular-item-desc6 > *,
+#regular-item-desc7 > *,
+#regular-item-desc8 > *,
+#regular-item-desc9 > *,
+#regular-item-desc10 > *,
+#regular-item-desc11 > *{
     border: 1px solid grey;
     border-radius: 5px;
     margin: 0 0px 0 0px;
@@ -106,7 +142,12 @@ td{
 #regular-price3,
 #regular-price4,
 #regular-price5,
-#regular-price6{
+#regular-price6,
+#regular-price7,
+#regular-price8,
+#regular-price9,
+#regular-price10,
+#regular-price11{
     border: 1px solid grey;
     border-radius: 5px;
     width: 193px;
@@ -161,10 +202,12 @@ td{
     align-items: center;
     background-color: #E6E8E6;
     width: 1000px;
+    height:400px;
 }
 
 #regular-order > h1{
     margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 #regular-view {
@@ -175,13 +218,7 @@ td{
 #regular-placeOrder {
     margin-top: 10px;
     width: 10vw;
-}
-
-#confirm-popup {
-    display: none;
-    text-align: center;
-    overflow: hidden;
-    margin:0;
+    visibility: visible;
 }
 
 #confirm-popup > *{
@@ -234,7 +271,7 @@ td{
 }
 
 #regular-itemList {
-    height: 15vw;
+    height: 14vw;
     width: 90%;
     overflow-y: scroll;
     border: 2px solid gray;
@@ -270,7 +307,7 @@ td{
 #regular-itemGrid {
     display: none;
     flex-direction: column;
-    height: 15vw;
+    height: 14vw;
     width: 90%; 
     overflow-y: scroll;
     margin-bottom: 0.5vw;
@@ -282,6 +319,7 @@ td{
     flex-direction: column;
     align-items: center;
     margin-right: 0.5vw;
+    margin-bottom: 15px;
     width: 10vw;
 }
 
@@ -298,8 +336,26 @@ td{
     margin-bottom: 0.5vw;
 }
 
+#regular-grid-item-desc1 > h4,
+#regular-grid-item-desc2 > h4,
+#regular-grid-item-desc3 > h4,
+#regular-grid-item-desc4 > h4,
+#regular-grid-item-desc5 > h4,
+#regular-grid-item-desc6 > h4,
+#regular-grid-item-desc7 > h4,
+#regular-grid-item-desc8 > h4,
+#regular-grid-item-desc9 > h4,
+#regular-grid-item-desc10 > h4,
+#regular-grid-item-desc11 > h4{
+    width: 150px;
+    text-align:center;
+}
+
 #order-sent{
     display: block;
-    height: 20px;
-    margin-top: -10px;  
+    height: 50px;
+}
+
+#order-sent > h2{
+    margin: 0;
 }
