@@ -77,6 +77,12 @@ function getData() {
         const table_length = document.getElementById("table_output").rows.length;
         displayResult(table_length)
     }
+    if(document.getElementById("search_by_selection").value == "2") 
+    {
+        var text = document.getElementById("input_item").value;
+        text = text.toLowerCase();
+        
+    }
 
 }
 
