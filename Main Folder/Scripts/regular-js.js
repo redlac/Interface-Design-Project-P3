@@ -158,3 +158,12 @@ function cancelOrder(){
     document.getElementById("regular-placeOrder").style.display = "block";
     document.getElementById("regular-placeOrder").style.visibility= "visible";
 }
+
+function getDate() {
+	var p = window.parent;
+    n = new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    p.document.getElementById("header-currentDate").innerHTML = m + "/" + d + "/" + y;
+}
