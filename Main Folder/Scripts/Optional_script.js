@@ -16,8 +16,12 @@ function start() {
     if (str) {
         mySave = JSON.parse(str); //Converts
         console.log(mySave);
+        
     }
-    displayItems();
+displayItems();
+    localStorage.removeItem(KEY, JSON.stringify(mySave));
+    
+    
 }
 
 function displayItems() 
@@ -31,7 +35,9 @@ function displayItems()
     {
         //Ceeate an element
         const item = document.createElement("li");
-        item.innerText = obj.myStr; //output the data (each data)
+        var myStr = JSON.stringify(obj.itemID) + ", " + JSON.stringify(obj.itemName) + ", Stock: " + obj.stock + ", Quantity: " + obj.quantity;
+        // item.innerText = object.myStr; //output the data (each data)
+        item.append(myStr);
 
         //Create the delete button for each data
         const btn = document.createElement("button");
@@ -39,11 +45,11 @@ function displayItems()
         btn.value = "Delete";
         //Set the attributes for button element
         btn.setAttribute("onclick", `deleting(${obj.id})`);
-        btn.setAttribute("data-text", obj.myStr); //Custom data attribute data-text
+        // btn.setAttribute("data-text", object.myStr); //Custom data attribute data-text
         btn.setAttribute("data-id", obj.id); //Custom data attribute data-id 
         item.append(btn); //Add to the data output
         // console.log(obj);
-        myOut.append(obj);//Display every single data
+        myOut.append(item);//Display every single data
     }
 }
 
@@ -318,9 +324,10 @@ function adding_item(id) {
             myData[i].quantity = quantity_item;
             mySave.push(myData[i]);
             // console.log(myData[i].quantity);
-            saveToStorage(my);
         }
     }
+    console.log("My Save Length: " + mySave.length);
+    saveToStorage();
 }
 
 function saveToStorage() {
