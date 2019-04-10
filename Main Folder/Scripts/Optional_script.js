@@ -40,17 +40,28 @@ function displayItems()
         item.append(myStr);
 
         //Create the delete button for each data
-        const btn = document.createElement("button");
-        btn.innerHTML = "Delete";
-        btn.value = "Delete";
-        //Set the attributes for button element
-        btn.setAttribute("onclick", `deleting(${obj.id})`);
-        // btn.setAttribute("data-text", object.myStr); //Custom data attribute data-text
-        btn.setAttribute("data-id", obj.id); //Custom data attribute data-id 
-        item.append(btn); //Add to the data output
+        var removeButton = document.createElement("button");
+            removeButton.innerHTML = "Remove";
+            removeButton.setAttribute("id", obj.itemName);
+            removeButton.setAttribute("onclick", `removingItemList(${obj.itemID});`);
+        item.append(removeButton); //Add to the data output
         // console.log(obj);
         myOut.append(item);//Display every single data
     }
+}
+
+function removingItemList(id) 
+{
+    for(let obj of mySave) 
+    {
+        if(obj.itemID == id) 
+        {
+            var idx = mySave.indexOf(obj);
+            mySave.splice(idx, 1);
+        }
+    }
+    saveToStorage();
+    displayItems();
 }
 
 function database_array() {
@@ -317,7 +328,7 @@ function adding_item(id) {
             var removeButton = document.createElement("button");
             removeButton.innerHTML = "Remove";
             removeButton.setAttribute("id", name_item);
-            removeButton.setAttribute("onclick", `removingItemList(${name_item});`);
+            removeButton.setAttribute("onclick", `removingItemList(${id_item});`);
 
             listItem.append(removeButton);
             list_output.append(listItem);
