@@ -67,7 +67,5 @@ a:visited {
 }
 
 #header-cutoff {
-    position: fixed;
-    top: 7px;
-    right: 10px;
+    float: right;
 }
