@@ -7,27 +7,24 @@ Here are the instructions to go through the system:
 3. Log in successfully with the following credentials:
         * Username: Kody
         * Password: CMPS253
-4. Click start new order button. 
-5. Click Regular tab
+4. Click Start New Order Button. 
 6. Scroll through items in list view.
 7. Switch to grid view using the drop-down menu.
 8. Scroll through items.
 9. Add one Qty of each item (6 total).
-10. Click on Special tab.
-11. Type Ash in Name field.
+10. Click on search field in Search for Product box on the right side of the screen.
+11. Type ham in the search field.
 12. Click search button.
-13. Add 3 Quantity of Ash Brick.
+13. Add 3 Quantity of Hamburger Patties in the search result box that appears.
 14. Click Add to Order button.
 15. Click Current Order button on bottom of screen.
 19. Close Current Order modal.
 16. Click Order Options tab.
 17. Click each checkbox on the page.
-18. Click Current Order button on bottom of screen.
-19. Close Current Order modal.
-20. Type 1001 in the Item# field.
-21. Click Add button.
-22. Add 1 Quantity of item.
-23. Click Save button.
-24. Click Order History tab.
-25. Click Cancel Current Order button.
+18. Select Product Name in the "Search by" selection box.
+19. Type in "b" (no quotes) in the search box to display products starting with the letter "b".
+20. Add 2 quantity of Brown Mushrooms, and click the Add button.
+21. Add 1 quantity of Banana, and click the Add button.
+24. Click the History tab.
+25. Click "Cancel Current Order" button. The order with status of "Pending" will be removed from the list.
 26. Sort through orders by date by changing Shipping Sent and Shipping Received inputs.
